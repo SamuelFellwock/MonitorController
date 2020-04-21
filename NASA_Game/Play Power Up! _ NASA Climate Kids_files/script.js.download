@@ -1,0 +1,622 @@
+/*global MediaElementPlayer:false, swfobject:false */
+
+var $featuredContent;
+var slideWidth;
+var numberOfSlides;
+var sliderInterval;
+var sliderIntervalCallback;
+
+var $menu;
+var menuIconSets;
+var menuIconInterval;
+
+var kSliderTime = 5000;
+//var searchRequestInProgress;
+
+//var quickSearchRequest;
+//var quickSearchTimeout;
+//var quickSearchQuery;
+
+var $videos;
+var $audio;
+var mediaElementVideoPlayers;
+var mediaElementAudioPlayers;
+var mediaElementCSSIncluded;
+
+var $embeddedFlash;
+var numberOfFlash;
+
+var showLabelsTimeout;
+
+
+function animateFrogEyes(){
+    var $frogEyes = $(".frog-eye");
+    $frogEyes.slideDown().slideUp();
+    setTimeout(animateFrogEyes, 7000);
+}
+
+function setupPlanetHealthReport(){
+    $(".planet-health-report").find(".buttons a").hover(function(){
+
+        clearTimeout(showLabelsTimeout);
+
+        $(".planet-health-report .windows div").hide();
+        $(".planet-health-report .windows ."+$(this).attr('class')).show();
+
+    }, function(){
+        showLabelsTimeout = setTimeout(function(){
+
+            $(".planet-health-report .windows div").hide();
+            $(".planet-health-report .windows .labels").show();
+
+        }, 500);
+    });
+    $(".planet-health-report .windows div").hover(function(){
+        clearTimeout(showLabelsTimeout);
+    }, function(){
+        showLabelsTimeout = setTimeout(function(){
+
+            $(".planet-health-report .windows div").hide();
+            $(".planet-health-report .windows .labels").show();
+
+        }, 500);
+    });
+}
+
+
+function setupSourceSwitcher($sourceSwitcher){
+
+    $sourceSwitcher.find(".hd-switch").click(function(){
+        $(this).toggleClass("on");
+
+        var playerIndex = parseInt($sourceSwitcher.attr('data-player-index'), 10);
+
+        var oldSource = mediaElementVideoPlayers[playerIndex].media.src;
+
+        if (oldSource.indexOf("-hd") !== -1) {
+            oldSource = oldSource.replace("-hd", "-sd");
+        }
+        else{
+            oldSource = oldSource.replace("-sd", "-hd");
+        }
+
+        $sourceSwitcher.attr('data-source', oldSource);
+
+
+        mediaElementVideoPlayers[playerIndex].setSrc(oldSource);
+        mediaElementVideoPlayers[playerIndex].play();
+
+        return false;
+    });
+
+    $sourceSwitcher.find(".subtitle-switch").click(function(){
+        $(this).toggleClass("on");
+        if ($(this).hasClass("on")){
+            $(this).find('strong').text("Subtitles On");
+        }
+        else{
+            $(this).find('strong').text("Subtitles Off");
+        }
+
+        var playerIndex = parseInt($sourceSwitcher.attr('data-player-index'), 10);
+        var oldSource = mediaElementVideoPlayers[playerIndex].media.src;
+
+        if (oldSource.indexOf("-subtitles") !== -1) {
+            oldSource = oldSource.replace("-subtitles", "-standard");
+        }
+        else{
+            oldSource = oldSource.replace("-standard", "-subtitles");
+        }
+
+        $sourceSwitcher.attr('data-source', oldSource);
+
+        mediaElementVideoPlayers[playerIndex].setSrc(oldSource);
+        mediaElementVideoPlayers[playerIndex].play();
+
+        return false;
+    });
+}
+
+function mediaSetup(){
+    mediaElementVideoPlayers = [];
+    mediaElementAudioPlayers = [];
+    mediaElementCSSIncluded = false;
+
+    $videos = $("video");
+    $audio = $("audio");
+    var counter = 0;
+
+
+    $videos.each(function(){
+        var $next = $(this).parent().next();
+        if ($next.is(".source-switcher")){
+            $next.attr('data-player-index', mediaElementVideoPlayers.length);
+            $next.attr('data-source', $(this).attr('src'));
+            setupSourceSwitcher($next);
+        }
+        var player;
+        if ($(this).attr('id') === undefined){
+            $(this).attr('id', 'mediaelement-'+(counter));
+            player = new MediaElementPlayer("#mediaelement-"+counter, {pluginPath: '/js/libs/mediaelement/', flashName: 'flashmediaelement.swf'});
+        } else {
+            player = new MediaElementPlayer("#"+$(this).attr('id'), { pluginPath: '/js/libs/mediaelement/', flashName: 'flashmediaelement.swf'});
+        }
+        mediaElementVideoPlayers.push(player);
+        counter++;
+    });
+
+    $audio.each(function(){
+        var player;
+        if ($(this).attr('id') === undefined){
+            $(this).attr('id', 'mediaelement-'+(counter));
+            player = new MediaElementPlayer("#mediaelement-"+counter, {pluginPath: '/js/libs/mediaelement/', flashName: 'flashmediaelement.swf'});
+        } else {
+            player = new MediaElementPlayer("#"+$(this).attr('id'), {pluginPath: '/js/libs/mediaelement/', flashName: 'flashmediaelement.swf'});
+        }
+        mediaElementAudioPlayers.push(player);
+    });
+
+    if ($videos.add($audio).length > 0){
+        mediaElementCSSIncluded = true;
+        $("head").append("<link rel = 'stylesheet' href = '/js/libs/mediaelement/mediaelementplayer.css'>");
+    }
+}
+
+function fixSideCaptions(){
+    var $sideCaptions = $(".image-with-caption-left, .image-with-caption-right");
+    $sideCaptions.each(function(){
+        var $img = $(this).find("img");
+
+        var $p = $(this).find("p");
+
+
+        if ($img.parent("a").length > 0){
+            $img.parent('a').prependTo($(this));
+        } else {
+            $img.prependTo($(this));
+        }
+
+        var imgHeight;
+        $img.load(function(){
+            imgHeight = $(this).height();
+
+             var pHeight = $p.height();
+
+            var difference = imgHeight - pHeight;
+            difference = difference / 2;
+            if (difference > 0){
+              $p.css("margin-top", difference);
+            }
+        });
+
+
+
+
+    });
+
+}
+
+function initializeFonts(){
+    var fonts = [];
+    $("[data-font]").each(function(){
+        var fontName = $(this).attr('data-font');
+        $(this).removeAttr("data-font");
+        fonts.push(fontName.replace(" ", "+"));
+        $(this).css("font-family", fontName);
+    });
+    if (fonts.length === 0) {
+        return;
+    }
+    var fontsString = fonts.join("|");
+    var fontsTag = "<link href='https://fonts.googleapis.com/css?family="+fontsString+"' rel='stylesheet' type='text/css'>";
+    $(fontsTag).appendTo($("head"));
+}
+
+
+//quick search
+
+function menuIconNext(){
+
+    for (var i = 0; i < menuIconSets.length; i++){
+        var $iconSet = $(menuIconSets[i]);
+        if ($iconSet.hasClass("up")){
+            var $invisibleIcons = $iconSet.filter(":hidden");
+            if ($invisibleIcons.length > 0){
+                $invisibleIcons.first().fadeIn();
+            }
+            else{
+                $iconSet.removeClass("up");
+                menuIconNext();
+            }
+
+
+        } else {
+
+            var $visibleIcons = $iconSet.filter(":visible");
+            if ($visibleIcons.length > 1){
+              $visibleIcons.last().fadeOut();
+            }
+            else{
+                $iconSet.addClass("up");
+                menuIconNext();
+            }
+        }
+
+    }
+
+}
+
+
+function initializeMenu(){
+    menuIconSets = [];
+    $menu.find("li").each(function(){
+        var $li = $(this);
+        var $icons = $li.find(".icon:visible");
+        if ($icons.length > 1){
+            menuIconSets.push($icons);
+        }
+    });
+
+    menuIconInterval = setInterval(menuIconNext, 5000);
+
+}
+
+
+
+
+
+
+
+
+function initializeFancyBox($zone){
+    $zone.find("a[href$='.jpg'],a[href$='.png'],a[href$='.gif'],a[href$='.txt']").attr('rel', 'gallery').fancybox();
+    $zone.find("a.ajax[href$='.html'],a.ajax[href$='.htm']").attr('rel', 'popups').each(function(){
+
+        $(this).fancybox({
+         'type': 'ajax',
+         //'autoSize': false,
+         'maxWidth': parseInt($(this).attr('data-width'), 10),
+         'maxHeight': parseInt($(this).attr('data-height'), 10),
+         'beforeShow': function(){
+                initializeFonts();
+            }
+         });
+    });
+    $zone.find("a[href$='.swf']").each(function(){
+
+        var width = $(this).attr("data-width");
+        var height = $(this).attr("data-height");
+
+        $(this).fancybox({
+            width: parseInt(width, 10),
+            height: parseInt(height, 10)
+        });
+
+    });
+
+    var videoNumber = 0;
+    $zone.find("a[href$='.mp4']").each(function(){
+
+        var videoPath = $(this).attr('href');
+        var width = $(this).attr('data-width');
+        var height = $(this).attr('data-height');
+        $("<div style = 'display:none;' id = 'lightbox-video"+videoNumber+"'><video width = '"+width+"' height = '"+height+"' id=\"videoTag"+videoNumber+"\" class=\"\" preload=\"auto\" src=\""+videoPath+"\" controls></video></div>").appendTo("body");
+        $(this).attr("href", "#lightbox-video"+videoNumber);
+        $(this).fancybox({
+            'afterShow':function(){
+
+                $(this.href).css('overflow', 'hidden');
+            },
+            'afterClose':function(){
+
+            }
+        });
+
+
+/*
+<video id="my_video_1" class="video-js vjs-default-skin" controls
+  preload="auto" width="640" height="264" poster="my_video_poster.png"
+  data-setup="{}">
+  <source src="my_video.mp4" type='video/mp4'>
+  <source src="my_video.webm" type='video/webm'>
+</video>
+*/
+
+        videoNumber++;
+
+    });
+}
+
+function progressSlideCircles(){
+    var $next = $(".slide-circle.selected").removeClass('selected').next();
+    if ($next.length === 0){
+        $next = $(".slide-circle").first();
+    }
+    $next.addClass("selected");
+}
+
+
+function sliderMouseOut(){
+    sliderInterval = setInterval(sliderIntervalCallback, kSliderTime);
+    $featuredContent.find(".pause-indicator").fadeOut();
+}
+
+function sliderMouseIn(){
+    clearInterval(sliderInterval);
+    $featuredContent.find(".pause-indicator").fadeIn();
+}
+
+function sliderForward(){
+    var $slideContainer = $featuredContent.find(".slide-container");
+    var $visible = $slideContainer.find(".slide:visible");
+    if ($slideContainer.find(".slide:hidden").length === 0){
+        var $first = $slideContainer.find(".slide").first();
+        $first.hide().appendTo($first.parent());
+    }
+
+    $visible.last().next().fadeIn('slow', function(){
+        $(".slide").children(":not(a):visible").hide();
+        $(this).children(":not(a)").show("slide", {direction: "left"}, 500);
+        progressSlideCircles();
+    });
+
+}
+
+/*
+
+function sliderBackward(){
+    var $slideContainer = $featuredContent.find(".slide-container");
+    var $visible = $slideContainer.find(".slide:visible");
+    if ($visible === $slideContainer.find(".slide").first()){
+
+        clearInterval(sliderInterval);
+        sliderIntervalCallback = sliderForward;
+        sliderInterval = setInterval(sliderIntervalCallback, kSliderTime);
+        sliderForward();
+    } else {
+        $visible.prev().fadeIn();
+    }
+}
+*/
+
+function sliderJumpTo(index){
+    var $slideContainer = $featuredContent.find(".slide-container");
+    var $visible = $slideContainer.find(".slide:visible");
+    $visible.fadeOut();
+    $slideContainer.find(".slide").eq(index).fadeIn('slow', function(){
+        $(".slide").children(":not(a):visible").hide();
+        $(this).children(":not(a)").show("slide", {direction: "left"}, 500);
+    });
+    $(".slide-circle").removeClass("selected").eq(index).addClass("selected");
+    clearInterval(sliderInterval);
+    sliderInterval = setInterval(sliderIntervalCallback, kSliderTime);
+}
+
+
+function initializeFeaturedContent($sliderObject){
+
+    var $slides = $(".slide");
+    slideWidth = $slides.width();
+    numberOfSlides = $slides.length;
+    $sliderObject.find(".slide-wrapper").css("overflow", "hidden");
+    //$sliderObject.find(".slide-container").css("position", "relative").css("overflow", "hidden").css("width", numberOfSlides * slideWidth).css("left", "0");
+    $sliderObject.find(".slide").hide().first().show();
+
+    sliderIntervalCallback = sliderForward;
+    sliderInterval = setInterval(sliderIntervalCallback, kSliderTime);
+    $sliderObject.mouseleave(sliderMouseOut);
+    $sliderObject.mouseenter(sliderMouseIn);
+    $(".slide").children(":not(a)").each(function(){
+        $(this).css("width", $(this).width);
+        $(this).hide();
+    });
+    $(".slide").first().children(":not(a)").show("slide", {direction: "left"}, 500);
+
+    var $slideCircles = $(".slide-circles");
+    $(".slide").each(function(){
+        if ($slideCircles.length === 0){
+            $slideCircles = $("<div class = 'slide-circles'></div>").appendTo(".slide-wrapper");
+        }
+        $("<span class = 'slide-circle'><a href = '#'>&#8226;</a></span>").appendTo($slideCircles);
+
+    });
+    $(".slide-circle").first().addClass("selected");
+    $(".slide-circle a").click(function(){
+        sliderJumpTo($(".slide-circle a").index(this));
+        return false;
+    });
+
+}
+
+/*
+
+function moveSliderTo($slideContainer, newLeft){
+    $slideContainer.animate({
+        "left": newLeft
+    },
+    {
+        "duration": 1000,
+        "easing": "easeOutBack"
+    });
+}
+*/
+
+
+
+
+$(window).load(function(){
+    //all assets are done loading
+
+    var $this;
+    var animationName;
+    var numberOfStrips;
+    var pathToImage;
+    var numberOfFrames;
+    var framesPerStrip;
+    var frameNumber;
+    var stripNumber;
+    var needToLoad;
+    var numberLoaded;
+
+    var filmCellHeight;
+
+    var imageLoadHandler = function(){
+        setTimeout(function(){
+            numberLoaded++;
+            if (numberLoaded === numberOfStrips) {(function(){
+                var pathToStrip = needToLoad[stripNumber-1].attr('src');
+
+                $this.css("background-image", "url("+pathToStrip+")").css("background-position", "0 0");
+                $this.attr("data-animation-handler", setInterval(function(){
+
+                    $this.css("background-position", "0 -"+(filmCellHeight * frameNumber)+"px");
+
+                    frameNumber++;
+                    if (frameNumber >= framesPerStrip){
+                        stripNumber++;
+                        if (stripNumber > numberOfStrips) {
+                            clearInterval(parseInt($this.attr('data-animation-handler'), 10));
+                        } else {
+                            var pathToStrip = needToLoad[stripNumber-1].attr('src');
+                            $this.css("background-image", "url("+pathToStrip+")").css("background-position", "0 0");
+
+                            frameNumber = 1;
+                        }
+                    }
+
+
+                }, 1000/parseInt($this.attr('data-animation-fps'), 10)));
+
+            })();}
+
+        }, 3000);
+    };
+
+    $("[data-animation]").each(function(){
+
+        $this = $(this);
+        animationName = $this.attr("data-animation");
+        numberOfStrips = parseInt($this.attr("data-animation-strips"), 10);
+        if (numberOfStrips === undefined || numberOfStrips === 1){
+            pathToImage = "/resources/animation/"+animationName+"/filmstrip.png";
+        } else {
+            pathToImage = "/resources/animation/"+animationName+"/filmstrip#.png";
+        }
+        numberOfFrames = parseInt($this.attr('data-animation-frames'), 10);
+        framesPerStrip = numberOfFrames / numberOfStrips;
+        frameNumber = 0;
+        stripNumber = 1;
+        needToLoad = [];
+        numberLoaded = 0;
+
+        filmCellHeight = $this.height();
+        for (var i = 0; i < numberOfStrips; i++){
+            var $img = $("<img src = '"+pathToImage.replace("#", i+1)+"'>");
+            needToLoad.push($img);
+            $img.load(imageLoadHandler);
+
+        }
+    });
+
+});
+
+function resetVitalSignsTabs(){
+	$(".vitalSignsTab").removeClass("vitalSignsTabSelected");
+	$("#vitalSignsContentIcon").removeClass();
+}
+
+$(document).ready(function(){
+//    videoCounter = 0;
+    initializeFancyBox($("body"));
+    $featuredContent = $("#featured-content");
+    if ($featuredContent.length > 0) {
+        initializeFeaturedContent($featuredContent);
+    }
+    $menu = $(".menu ul");
+    if ($menu.length > 0) {
+        initializeMenu();
+    }
+
+    $("#search").quickSearch();
+    initializeFonts();
+    fixSideCaptions();
+    //if its a review page
+    if(window.location.href.indexOf("review") !== -1){
+        $(".title-bar h2").text($(".page-title").text());
+    }
+    $(".menu li:not(.big) p").jTruncate({"length":60,"minTrail":20, "moreText":""});
+    mediaSetup();
+    numberOfFlash = 0;
+    $embeddedFlash = $(".embedded-flash");
+    if ($embeddedFlash.length > 0){
+        $.getScript("/js/libs/swfobject/swfobject.js", function(/*script, textStatus, jqXHR*/){
+
+
+            $embeddedFlash.each(function(){
+                var $this = $(this);
+                var newId = "flash-"+numberOfFlash;
+                $this.wrap("<div id = '"+newId+"'></div>");
+                swfobject.embedSWF($this.attr('href'), newId, $this.attr('data-width'), $this.attr('data-height'), "9.0.0", "/js/libs/swfobject/expressInstall.swf");
+                numberOfFlash++;
+            });
+
+        });
+    }
+
+    setupPlanetHealthReport();
+    if ($(".frog-eye").length > 0){
+        animateFrogEyes();
+    }
+
+    if (pageSpecificScript !== undefined) {
+        pageSpecificScript();
+    }
+
+    $("img[data-curtain-src]").each(function(){
+        var $beforeImg = $(this);
+        $beforeImg.wrap("<div class = 'beforeafter-wrap'></div>");
+        var $beforeAfterWrap = $(this).parent();
+
+        setTimeout(function(){
+            $beforeAfterWrap.css('width', $beforeImg.width);
+            $beforeImg.attr('width', $beforeImg.width).attr('height', $beforeImg.height);
+            $beforeAfterWrap.append($beforeImg.clone().attr('src',$beforeImg.attr('data-curtain-src')));
+            $beforeAfterWrap.beforeAfter();
+        }, 500);
+
+
+    });
+    
+    
+    
+    //vital signs tabs
+    $("#vitalSignsTabCarbonDioxide.vitalSignsTab").click(function(){
+		resetVitalSignsTabs();
+		$(this).addClass("vitalSignsTabSelected");
+		$("#vitalSignsContentText").html("Earth\'s atmosphere now has <span class=\"vitalSignsTextRed\">412</span> parts of Carbon Dioxide<br>for every million parts of air. <a href=\"/health-report-air\">What does this number mean?</a>");
+		$("#vitalSignsContentIcon").addClass("vitalSignsIconCarbonDioxide");
+	});
+	
+	$("#vitalSignsTabGlobalTemperature.vitalSignsTab").click(function(){
+		resetVitalSignsTabs();
+		$(this).addClass("vitalSignsTabSelected");
+		$("#vitalSignsContentText").html("Earth\'s global average temperature is <span class=\"vitalSignsTextRed\">1.9&#8457;</span> hotter than<br>it was in 1880. <a href=\"/health-report-temp\">Why is this small number a big deal?</a>");
+		$("#vitalSignsContentIcon").addClass("vitalSignsIconGlobalTemperature");
+	});
+	
+	$("#vitalSignsTabSeaIce.vitalSignsTab").click(function(){
+		resetVitalSignsTabs();
+		$(this).addClass("vitalSignsTabSelected");
+		$("#vitalSignsContentText").html("The area of the Arctic Ocean covered by sea ice in 2018 was<br>only <span class=\"vitalSignsTextRed\">~66%</span> as large as it was in 1979. <a href=\"/health-report-sea-ice\">What is happening to the ice?</a>");
+		$("#vitalSignsContentIcon").addClass("vitalSignsIconSeaIce");
+	});
+	
+	$("#vitalSignsTabSeaLevel.vitalSignsTab").click(function(){
+		resetVitalSignsTabs();
+		$(this).addClass("vitalSignsTabSelected");
+		$("#vitalSignsContentText").html("The global average sea level has risen <span class=\"vitalSignsTextRed\">nearly 7 inches</span><br>over the past 100 years. <a href=\"/health-report-sea-level\">What if it keeps rising this fast?</a>");
+		$("#vitalSignsContentIcon").addClass("vitalSignsIconSeaLevel");
+	});
+
+});
+

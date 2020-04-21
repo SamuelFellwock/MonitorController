@@ -1,0 +1,3963 @@
+.ShortStack{
+	font-family:'Short Stack', cursive;
+}
+
+.YTVideoWrapper{
+    position: relative;
+    padding-bottom: 53%; /* 56.25 for 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.YTVideoWrapper iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* HTML5 Boilerplate  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\000033}}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\000034}}
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\000035}}
+audio:not([controls]) {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\000036}}
+[hidden] {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\000038}}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\000039}}
+html, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000310}}
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000312}}
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000313}}
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000315}}
+a {
+  color: #00e; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000316}}
+a:visited {
+  color: #551a8b; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000317}}
+a:hover {
+  color: #06e; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000318}}
+a:focus {
+  outline: thin dotted; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000319}}
+a:hover, a:active {
+  outline: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000320}}
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000321}}
+b, strong {
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000322}}
+blockquote {
+  margin: 1em 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000323}}
+dfn {
+  font-style: italic; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000324}}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000325}}
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000326}}
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000327}}
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000328}}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000330}}
+q {
+  quotes: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000331}}
+q:before, q:after {
+  content: "";
+  content: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000332}}
+small {
+  font-size: 85%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000333}}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000334}}
+sup {
+  top: -0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000335}}
+sub {
+  bottom: -0.25em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000337}}
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000338}}
+dd {
+  margin: 0 0 0 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000339}}
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000341}}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000342}}
+svg:not(:root) {
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000343}}
+figure {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000345}}
+form {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000346}}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000348}}
+label {
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000349}}
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+  white-space: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000350}}
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000351}}
+button, input {
+  line-height: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000352}}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000353}}
+button[disabled], input[disabled] {
+  cursor: default; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000354}}
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *width: 13px;
+  *height: 13px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000355}}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000356}}
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000357}}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000358}}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000360}}
+input:invalid, textarea:invalid {
+  background-color: #f0dddd; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000362}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000363}}
+td {
+  vertical-align: top; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000365}}
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: black;
+  padding: 0.2em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000380}}
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000381}}
+.ir br {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000382}}
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000383}}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000384}}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000385}}
+.invisible {
+  visibility: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000386}}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000387}}
+.clearfix:after {
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/boilerplate\.scss}line{font-family:\0000388}}
+.clearfix {
+  *zoom: 1; }
+
+/*
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } 
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\0000368}}
+body {
+  position: relative;
+  background: #CAEEF9;
+  overflow-x: hidden; }
+  @media (max-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\0000368}}
+    body {
+      width: 1000px;
+      overflow-x: auto; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\0000381}}
+header {
+  margin: 0;
+  /*background: transparent url("/resources/design/background-leaves.png") no-repeat center 98px;*/
+  position: relative;
+  /* sky */
+  clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\0000385}}
+  header #nasa-header {
+    height: 130px;
+    position: relative;
+    margin-bottom:50px;
+    background: #caeefa;
+	background: -moz-linear-gradient(top, #caeefa 0%, #96def6 100%); 
+	background: -webkit-linear-gradient(top, #caeefa 0%,#96def6 100%);
+	background: linear-gradient(to bottom, #caeefa 0%,#96def6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#caeefa', endColorstr='#96def6',GradientType=0 );
+     }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\0000390}}
+    header #nasa-header .container {
+      width: 1010px;
+      margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\0000394}}
+    header #nasa-header img {
+      margin-top: 30px;
+      float: left; }
+      
+    #nasa-header .siteHeaderLogo{
+	    max-width:100%;
+	    margin-top:39px;
+	    margin-left:10px;
+    }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\0000398}}
+    header #nasa-header span {
+      font-size: 16px;
+      display: block;
+      height: 98px;
+      line-height: 98px;
+      color: #054824;
+      float: left;
+      margin-left: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003107}}
+      header #nasa-header span a {
+        text-decoration: none;
+        color: #054824; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003112}}
+    header #nasa-header #search {
+      width: 250px;
+      height: 32px;
+      float: right;
+      margin-top: 62px;
+      background: white;
+      border-radius: 8px;
+      border-color: #054824;
+      border-style: solid;
+      border-width: 3px;
+      position: relative;
+      z-index: 1000;
+      z-index: 999999; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003126}}
+      header #nasa-header #search form {
+        padding: 0;
+        margin: 0;
+        display: inline; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003131}}
+      header #nasa-header #search input {
+        border: 0;
+        height: 28px;
+        border-radius: 3px;
+        padding-left: 15px;
+        padding-top: 2px;
+        font-size: 14px;
+        width: 196px;
+        display: inline-block;
+        vertical-align: top; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003142}}
+      header #nasa-header #search .search-results {
+        background: white;
+        position: absolute;
+        top: 28px;
+        left: -3px;
+        width: 218px;
+        border: 3px solid #054824;
+        border-top: none;
+        z-index: 100;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding-top: 10px;
+        display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003155}}
+        header #nasa-header #search .search-results .searching {
+          text-align: center;
+          font-weight: bold;
+          color: #898989;
+          margin-bottom: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003161}}
+        header #nasa-header #search .search-results .ajax-results {
+          display: none;
+          position: relative;
+          z-index: 1000; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003166}}
+        header #nasa-header #search .search-results div span {
+          background: #054824;
+          color: white;
+          font-size: 14px;
+          font-variant: small-caps;
+          display: block;
+          float: none;
+          margin: 0;
+          height: 20px;
+          line-height: 20px;
+          text-align: center;
+          clear: both;
+          cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003179}}
+          header #nasa-header #search .search-results div span a {
+            display: inline;
+            color: white;
+            text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003183}}
+            header #nasa-header #search .search-results div span a:hover {
+              color: yellow; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003189}}
+        header #nasa-header #search .search-results ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003193}}
+          header #nasa-header #search .search-results ul li {
+            clear: both;
+            height: 40px;
+            line-height: 40px;
+            overflow: hidden;
+            font-size: 12px;
+            cursor: pointer !important;
+            position: relative;
+            z-index: 1000; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003202}}
+            header #nasa-header #search .search-results ul li img {
+              float: left;
+              margin: 3px;
+              height: 33px;
+              width: 33px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003208}}
+            header #nasa-header #search .search-results ul li a {
+              color: black;
+              text-decoration: none;
+              font-weight: bold;
+              padding-left: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003214}}
+            header #nasa-header #search .search-results ul li:hover, header #nasa-header #search .search-results ul li.selected {
+              background: #fdeea5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003221}}
+      header #nasa-header #search:after {
+        content: " ";
+        display: block;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        position: absolute;
+        right: -2px;
+        height: 32px;
+        width: 33px;
+        background: #054824 url("/resources/icons/search.png") no-repeat 8px 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003235}}
+  header #climate-kids-header {
+    position: relative;
+    width: 1010px;
+    margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003238}}
+    header #climate-kids-header h2 a {
+      display: block;
+      background: url("/resources/design/climate-kids-header.png");
+      width: 583px;
+      height: 235px;
+      text-indent: 105%;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+      top: -30px;
+      left: -35px;
+      z-index: 10;
+      pointer-events: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003250}}
+    header #climate-kids-header #global-climate-change-plug h2 a {
+      display: block;
+      width: 228px;
+      height: 76px;
+      background: transparent url("/resources/design/global-climate-change.png") no-repeat top left;
+      text-indent: 105%;
+      white-space: nowrap;
+      overflow: hidden;
+      position: absolute;
+      top: 80px;
+      right: 85px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003260}}
+    header #climate-kids-header nav {
+      display: block;
+      background: -moz-linear-gradient(left, rgba(203, 217, 96, 0) 0%, #cbd960 50%, rgba(203, 217, 96, 0) 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(3%, rgba(203, 217, 96, 0)), color-stop(100%, #cbd960), color-stop(94%, rgba(203, 217, 96, 0)));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left, rgba(203, 217, 96, 0) 0%, #cbd960 50%, rgba(203, 217, 96, 0) 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left, rgba(203, 217, 96, 0) 0%, #cbd960 50%, rgba(203, 217, 96, 0) 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(left, rgba(203, 217, 96, 0) 0%, #cbd960 50%, rgba(203, 217, 96, 0) 100%);
+      /* IE10+ */
+      background: linear-gradient(to right, rgba(203, 217, 96, 0) 0%, #cbd960 50%, rgba(203, 217, 96, 0) 100%);
+      /* W3C */
+      width: 1672px;
+      position: relative;
+      left: -662px;
+      padding-left: 662px;
+      margin-top: -90px;
+      z-index: 1;
+      height: 46px;
+      margin-left: auto;
+      margin-right: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003281}}
+      header #climate-kids-header nav:after {
+        background: -moz-linear-gradient(left, rgba(239, 104, 60, 0) 3%, #ef683c 50%, rgba(239, 104, 60, 0) 94%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(3%, rgba(239, 104, 60, 0)), color-stop(50%, #ef683c), color-stop(94%, rgba(239, 104, 60, 0)));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left, rgba(239, 104, 60, 0) 3%, #ef683c 50%, rgba(239, 104, 60, 0) 94%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left, rgba(239, 104, 60, 0) 3%, #ef683c 50%, rgba(239, 104, 60, 0) 94%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(left, rgba(239, 104, 60, 0) 3%, #ef683c 50%, rgba(239, 104, 60, 0) 94%);
+        /* IE10+ */
+        background: linear-gradient(to right, rgba(239, 104, 60, 0) 3%, #ef683c 50%, rgba(239, 104, 60, 0) 94%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00EE5D35', endColorstr='#00EE5D35',GradientType=1 );
+        /* IE6-9 */
+        content: " ";
+        display: block;
+        width: 1672px;
+        height: 4px;
+        left: -331px;
+        position: relative;
+        top: 43px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003298}}
+      header #climate-kids-header nav a {
+        display: inline-block;
+        float: left;
+        height: 37px;
+        background: url("/resources/design/top-nav-full.png") no-repeat;
+        text-indent: 105%;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        top: 8px;
+        width: 105px;
+        z-index: 5;
+        -webkit-transition: width 0.5s;
+        -moz-transition: width 0.5s;
+        -o-transition: width 0.5s;
+        -ms-transition: width 0.5s;
+        transition: width 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003314}}
+        header #climate-kids-header nav a:hover {
+          -webkit-transition: width 0.5s;
+          -moz-transition: width 0.5s;
+          -o-transition: width 0.5s;
+          -ms-transition: width 0.5s;
+          transition: width 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003323}}
+      header #climate-kids-header nav .home {
+        background-position: 0px 0px;
+        margin-right: 13px; }
+        @media (min-width: 895px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003327}}
+          header #climate-kids-header nav .home:hover {
+            width: 105px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003332}}
+      header #climate-kids-header nav .play {
+        background-position: 0px -34px;
+        height: 25px;
+        width: 90px;
+        margin-right: 5px; }
+        @media (min-width: 895px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003337}}
+          header #climate-kids-header nav .play:hover {
+            width: 170px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003342}}
+      header #climate-kids-header nav .make {
+        top: 4px;
+        width: 100px;
+        background-position: 0px -64px;
+        margin-right: 10px; }
+        @media (min-width: 895px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003347}}
+          header #climate-kids-header nav .make:hover {
+            width: 170px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003352}}
+      header #climate-kids-header nav .know {
+        background-position: 0px -102px;
+        height: 29px;
+        margin-right: 5px; }
+        @media (min-width: 895px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003356}}
+          header #climate-kids-header nav .know:hover {
+            width: 230px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003361}}
+      header #climate-kids-header nav .keep-up {
+        background-position: 0px -136px;
+        height: 29px;
+        width: 100px;
+        margin-right: 15px; }
+        @media (min-width: 895px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003366}}
+          header #climate-kids-header nav .keep-up:hover {
+            width: 290px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003371}}
+      header #climate-kids-header nav .watch {
+        background-position: 0px -170px;
+        margin-right: 15px; }
+        @media (min-width: 895px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003374}}
+          header #climate-kids-header nav .watch:hover {
+            width: 180px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003379}}
+      header #climate-kids-header nav .dream {
+        background-position: 0px -204px;
+        height: 29px;
+        width: 110px;
+        margin-right: 10px; }
+        @media (min-width: 895px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003384}}
+          header #climate-kids-header nav .dream:hover {
+            width: 290px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003389}}
+      header #climate-kids-header nav .teach {
+        background-position: 0px -238px; }
+        @media (min-width: 895px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003391}}
+          header #climate-kids-header nav .teach:hover {
+            width: 325px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003398}}
+  header:after {
+    content: " ";
+    height: 900px;
+    display: block;
+    position: absolute;
+    width: 3000px;
+    top: 0;
+    background:#CAEEF9;
+    z-index: -2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003418}}
+#main {
+  width: 1010px;
+  margin: 0 auto;
+  margin-top: 15px;
+  overflow: visible;
+  position: relative;
+  z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003424}}
+  #main nav {
+    float: left;
+    width: 225px;
+    margin-bottom: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003428}}
+    #main nav a {
+      position: relative;
+      display: block;
+      text-indent: 105%;
+      white-space: nowrap;
+      overflow: hidden;
+      left: 0;
+      -webkit-transition: left 0.5s;
+      -moz-transition: left 0.5s;
+      -o-transition: left 0.5s;
+      -ms-transition: left 0.5s;
+      transition: left 0.5s;
+      margin-bottom: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003439}}
+      #main nav a:hover {
+        left: -20px;
+        -webkit-transition: left 0.5s;
+        -moz-transition: left 0.5s;
+        -o-transition: left 0.5s;
+        -ms-transition: left 0.5s;
+        transition: left 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003448}}
+    #main nav .big-questions-menu {
+      width: 204px;
+      height: 69px;
+      background: transparent url("/resources/unsprited/big-questions-menu-button.png") no-repeat top left;
+      margin-top: -15px;
+      margin-left: 8px;
+      margin-bottom: -10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003457}}
+    #main nav .big-questions {
+      width: 223;
+      height: 128px;
+      background: transparent url("/resources/unsprited/big-questions.png") no-repeat top left;
+      margin-left: -10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003463}}
+    #main nav .weather-and-climate {
+      width: 227px;
+      height: 74px;
+      background: transparent url("/resources/unsprited/weather-and-climate.png") no-repeat top left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003468}}
+    #main nav .air {
+      margin-top: -5px;
+      width: 215px;
+      height: 61px;
+      background: transparent url("/resources/unsprited/air.png") no-repeat top left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003474}}
+    #main nav .ocean {
+      width: 212px;
+      height: 62px;
+      background: transparent url("/resources/unsprited/ocean.png") no-repeat top left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003479}}
+    #main nav .fresh-water {
+      width: 204px;
+      height: 59px;
+      background: transparent url("/resources/unsprited/fresh-water.png") no-repeat top left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003484}}
+    #main nav .carbons-travels {
+      width: 211px;
+      height: 76px;
+      background: transparent url("/resources/unsprited/carbon-travels.png") no-repeat top left;
+      margin-top: -5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003490}}
+    #main nav .energy {
+      margin-top: -5px;
+      width: 209px;
+      height: 69px;
+      background: transparent url("/resources/unsprited/energy.png") no-repeat top left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003496}}
+    #main nav .plants-and-animals {
+      width: 211px;
+      height: 64px;
+      background: transparent url("/resources/unsprited/plants-and-animals.png") no-repeat top left;
+      margin-top: -10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003502}}
+    #main nav .technology {
+      width: 227px;
+      height: 65px;
+      background: transparent url("/resources/unsprited/technology.png") no-repeat top left;
+      margin-left: -10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003509}}
+  #main #featured-content {
+    background: url("/resources/site/slider.png") no-repeat top left;
+    width: 1010px;
+    max-width:100%;
+    height: 635px;
+    float: left;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    margin-top:-10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003518}}
+    #main #featured-content .slide-wrapper {
+      height: 540px;
+      width: 960px;
+      margin-top: 23px;
+      margin-left: 19px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003524}}
+      #main #featured-content .slide-wrapper .slide-circles {
+        width: 1010px;
+        text-align: center;
+        background: transparent;
+        position: absolute;
+        bottom: -15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003530}}
+        #main #featured-content .slide-wrapper .slide-circles .slide-circle {
+          font-size: 80px;
+          padding-right: 10px;
+          color: #111; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003534}}
+          #main #featured-content .slide-wrapper .slide-circles .slide-circle a {
+            color: #111;
+            text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003538}}
+          #main #featured-content .slide-wrapper .slide-circles .slide-circle.selected a {
+            color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003544}}
+    #main #featured-content .slide-container {
+      width: 960px;
+      height: 540px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003548}}
+      #main #featured-content .slide-container .slide {
+        float: left;
+        position: absolute;
+        top: 23px;
+        left: 19px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003554}}
+        #main #featured-content .slide-container .slide a img {
+          border-radius: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003558}}
+        #main #featured-content .slide-container .slide h1 {
+          word-wrap: none;
+          position: absolute;
+          left: 30px;
+          bottom:-25px;
+          color: yellow;
+          height: 45px;
+          overflow: hidden;
+          width: 645px;
+          font-size: 1.6em;
+          font-weight: bold;
+          text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+          
+#main #featured-content .slide-container .slide .indexSliderCTA {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	color: yellow;
+	height: 45px;
+	width:180px;
+	overflow: hidden;
+	font-size: 1em;
+	font-weight: bold;
+	text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+	
+	
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003578}}
+        #main #featured-content .slide-container .slide .ribbon {
+          background: purple;
+          height: 40px;
+          width: 550px;
+          position: absolute;
+          bottom: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003584}}
+          #main #featured-content .slide-container .slide .ribbon::before {
+            width: 0;
+            height: 0;
+            border-top: 40px solid purple;
+            border-right: 40px solid transparent;
+            display: block;
+            position: absolute;
+            right: -38px;
+            content: " "; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003594}}
+          #main #featured-content .slide-container .slide .ribbon::after {
+            width: 0;
+            height: 0;
+            border-bottom: 40px solid purple;
+            border-right: 40px solid transparent;
+            display: block;
+            position: absolute;
+            right: -38px;
+            content: " "; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003614}}
+          #main #featured-content .slide-container .slide .ribbon.purple {
+            background: purple; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003617}}
+          #main #featured-content .slide-container .slide .ribbon.purple::before {
+            border-top: 40px solid purple; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003620}}
+          #main #featured-content .slide-container .slide .ribbon.purple::after {
+            border-bottom: 40px solid purple; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003614}}
+          #main #featured-content .slide-container .slide .ribbon.red {
+            background: red; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003617}}
+          #main #featured-content .slide-container .slide .ribbon.red::before {
+            border-top: 40px solid red; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003620}}
+          #main #featured-content .slide-container .slide .ribbon.red::after {
+            border-bottom: 40px solid red; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003614}}
+          #main #featured-content .slide-container .slide .ribbon.blue {
+            background: #2c3b8d; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003617}}
+          #main #featured-content .slide-container .slide .ribbon.blue::before {
+            border-top: 40px solid #2c3b8d; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003620}}
+          #main #featured-content .slide-container .slide .ribbon.blue::after {
+            border-bottom: 40px solid #2c3b8d; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003614}}
+          #main #featured-content .slide-container .slide .ribbon.green {
+            background: green; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003617}}
+          #main #featured-content .slide-container .slide .ribbon.green::before {
+            border-top: 40px solid green; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003620}}
+          #main #featured-content .slide-container .slide .ribbon.green::after {
+            border-bottom: 40px solid green; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003614}}
+          #main #featured-content .slide-container .slide .ribbon.yellow {
+            background: yellow; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003617}}
+          #main #featured-content .slide-container .slide .ribbon.yellow::before {
+            border-top: 40px solid yellow; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003620}}
+          #main #featured-content .slide-container .slide .ribbon.yellow::after {
+            border-bottom: 40px solid yellow; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003614}}
+          #main #featured-content .slide-container .slide .ribbon.black {
+            background: black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003617}}
+          #main #featured-content .slide-container .slide .ribbon.black::before {
+            border-top: 40px solid black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003620}}
+          #main #featured-content .slide-container .slide .ribbon.black::after {
+            border-bottom: 40px solid black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003614}}
+          #main #featured-content .slide-container .slide .ribbon.white {
+            background: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003617}}
+          #main #featured-content .slide-container .slide .ribbon.white::before {
+            border-top: 40px solid white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003620}}
+          #main #featured-content .slide-container .slide .ribbon.white::after {
+            border-bottom: 40px solid white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003629}}
+          #main #featured-content .slide-container .slide .ribbon h2 {
+            bottom: -25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003635}}
+    #main #featured-content .pause-indicator {
+      background: black;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 25px;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      bottom: 90px;
+      right: 50px;
+      display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003645}}
+      #main #featured-content .pause-indicator div {
+        width: 8px;
+        height: 20px;
+        background: white;
+        display: inline-block;
+        margin-left: 3px;
+        margin-right: 3px;
+        position: relative;
+        top: 15px;
+        left: 11px; }
+
+
+#top-nav{
+	width:1010px;
+	max-width:100%;
+	min-height:180px;
+	position:relative;
+	margin:0 auto;
+}
+
+.topNavIconHolder{
+	width:157px;
+	height:180px;
+	float:left;
+}
+
+.topNavIcon{
+	width:157px;
+	height:112px;
+}
+
+.topNavText{
+	text-align:center;
+	margin-top:10px;
+	font-size: 14pt;
+	line-height:16pt;
+	font-weight:bold;
+	color:#215401;
+}
+
+.topNavBuffer{
+	float:left;
+	width:13px;
+	height:150px;
+}
+
+#topBigQuestions{
+	background-image:url("/resources/site/menu_bigquestions.png");
+}
+
+#topWeatherClimate{
+	background-image:url("/resources/site/menu_weatherclimate.png");
+}
+
+#topAtmosphere{
+	background-image:url("/resources/site/menu_atmosphere.png");
+}
+
+#topWater{
+	background-image:url("/resources/site/menu_water.png");
+}
+
+#topEnergy{
+	background-image:url("/resources/site/menu_energy.png");
+}
+
+#topPlantsAnimals{
+	background-image:url("/resources/site/menu_plantsanimals.png");
+}
+
+
+#vitalSignsTabsHolder{
+    width:1010px;
+    max-width:100%;
+    float:left;
+    margin-top:40px;
+}
+
+#vitalSignsTabs{
+    position:relative;
+    width:1000px;
+    max-width:100%;
+}
+
+.vitalSignsTab{
+    float:left;
+    width:242px;
+    height:50px;
+    background:#BCC96D;
+    border:4px solid #006838;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    cursor:pointer;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+.vitalSignsTabSelected{
+    background: #CFE191;
+    height:54px;
+    border-bottom:none;
+}
+
+.vitalSignsTabArrow{
+    float:left;
+    width:41px;
+    height:32px;
+    margin-left:10px;
+    margin-top:5px;
+}
+
+.vitalSignsTabArrowUp{
+    background-image:url("/resources/site/arrowUp.png");
+}
+
+.vitalSignsTabArrowDown{
+    background-image:url("/resources/site/arrowDown.png");
+}
+
+.vitalSignsTabText{
+    float:left;
+    width:160px;
+    line-height:18px;
+    margin-left:10px;
+    margin-top:4px;
+    font-size:14pt;
+    color:#215401;
+    font-weight: bold;
+}
+
+#vitalSignsContent{
+    position:relative;
+    width:992px;
+    max-width:100%;
+    min-height:90px;
+    background: #CFE191;
+    border:4px solid #006838;
+    border-top:none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+#vitalSignsContentText{
+    float:left;
+    width:760px;
+    max-width:80%;
+    margin-left:61px;
+    margin-top:18px;
+    font-size:14pt;
+    color:#215401;
+    font-weight:bold;
+}
+
+#vitalSignsContentText a{
+    color:#215401;
+}
+
+.vitalSignsTextRed{
+    color:#BE1E2D;
+}
+
+#vitalSignsContentIcon{
+    float:right;
+    width:87px;
+    height:67px;
+    margin-right:50px;
+    margin-top:10px;
+    background-repeat: no-repeat;
+}
+
+.vitalSignsIconCarbonDioxide{
+    background-image:url("/resources/site/vitalSign_CarbonDioxide.png");
+}
+
+.vitalSignsIconGlobalTemperature{
+    background-image:url("/resources/site/vitalSign_GlobalTemperature.png");
+}
+
+.vitalSignsIconSeaIce{
+    background-image:url("/resources/site/vitalSign_SeaIce.png");
+}
+
+.vitalSignsIconSeaLevel{
+    background-image:url("/resources/site/vitalSign_SeaLevel.png");
+}
+
+.archiveCallout{
+	background:#cfe096;
+	color:#2b3d25;
+	border:4px solid #00693b;
+	padding:10px;
+	border-radius:10px;
+	font-size:10pt;
+	font-weight:bold;
+}
+
+#indexFeaturedItems{
+	position:relative;
+	margin-top:50px;
+	width:1010px;
+	max-width:100%;
+	height:160px;
+}
+
+.indexFeaturedItem{
+	float:left;
+	width:319px;
+	max-width:100%;
+	min-height:250px;
+	border-radius:30px;
+	border: 4px solid #006838; 
+	box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.4);
+	background: #bbdb98;
+	background: -moz-linear-gradient(top, #bbdb98 0%, #bbdb98 0%, #83c24f 100%);
+	background: -webkit-linear-gradient(top, #bbdb98 0%,#bbdb98 0%,#83c24f 100%);
+	background: linear-gradient(to bottom, #bbdb98 0%,#bbdb98 0%,#83c24f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbdb98', endColorstr='#83c24f',GradientType=0 );
+}
+
+.indexFeaturedItem img{
+	width:300px;
+	max-width:100%;
+	margin-left:10px;
+	margin-top:10px;
+	border-radius:30px;
+}
+
+.indexFeaturedItemText{
+	margin-top:12px;
+	text-align:center;
+	color:#215401;
+	font-weight:bold;
+}
+
+.indexFeaturedItemBuffer{
+	float:left;
+	width:10px;
+	height:150px;
+}
+
+.menuItem{
+	float:left;
+	width:319px;
+	margin-bottom:20px;
+	max-width:100%;
+	min-height:250px;
+	border-radius:30px;
+	border: 4px solid #006838; 
+	box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.4);
+	background: #bbdb98;
+	background: -moz-linear-gradient(top, #bbdb98 0%, #bbdb98 0%, #83c24f 100%);
+	background: -webkit-linear-gradient(top, #bbdb98 0%,#bbdb98 0%,#83c24f 100%);
+	background: linear-gradient(to bottom, #bbdb98 0%,#bbdb98 0%,#83c24f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbdb98', endColorstr='#83c24f',GradientType=0 );
+}
+
+.menuItem.out {
+        background: #006838;
+        border:4px solid #83c24f; }
+
+.menuItem img{
+	width:300px;
+	height:168px;
+	max-width:100%;
+	margin-left:10px;
+	margin-top:10px;
+	border-radius:30px;
+}
+
+.menuItemText{
+	margin-top:12px;
+	text-align:center;
+	color:#215401;
+	font-weight:bold;
+}
+
+.menuItemText.out{
+	color:#83c24f;
+}
+
+.menuItemBuffer{
+	float:left;
+	width:10px;
+	height:150px;
+}
+
+#indexBottomNavItems{
+	position:relative;
+	margin-top:50px;
+	margin-bottom:50px;
+	width:1010px;
+	max-width:100%;
+	min-height:120px;
+	text-align:center;
+}
+
+.indexBottomNavItem{
+	float:left;
+	width:150px;
+	max-width:100%;
+	min-height:120px;
+	border-radius:30px;
+	border: 4px solid #006838; 
+	box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.4);
+	background: #bbdb98;
+	background: -moz-linear-gradient(top, #bbdb98 0%, #bbdb98 0%, #83c24f 100%);
+	background: -webkit-linear-gradient(top, #bbdb98 0%,#bbdb98 0%,#83c24f 100%);
+	background: linear-gradient(to bottom, #bbdb98 0%,#bbdb98 0%,#83c24f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbdb98', endColorstr='#83c24f',GradientType=0 );
+}
+
+.indexBottomNavItem img{
+	
+}
+
+.indexBottomNavItemText{
+	text-align:center;
+	color:#215401;
+	font-weight:bold;
+}
+
+.indexBottomNavItemBuffer{
+	float:left;
+	width:52px;
+	height:120px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003658}}
+  #main:before {
+    content: " ";
+    background: transparent url("/resources/site/bg_climatekids.png") repeat-x center bottom;
+    display: block;
+    width: 8000px;
+    height: 1224px;
+    position: fixed;
+    left: 50%;
+    margin-left:-3900px;
+    z-index: -1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003670}}
+  #main:after {
+    content: " ";
+    display: block;
+    clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003675}}
+  #main .callout {
+    margin-top: 10px;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 50px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003681}}
+  #main .callout.planet-health-report {
+    width: 232px;
+    height: 167px;
+    background: url("/resources/design/dark-blue-callout-box.png"); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003685}}
+    #main .callout.planet-health-report span {
+      margin-left: 30px;
+      margin-top: 30px;
+      display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003690}}
+    #main .callout.planet-health-report .info a {
+      text-decoration: underline;
+      color: #333; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003694}}
+    #main .callout.planet-health-report a {
+      text-decoration: none;
+      color: #333; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003699}}
+  #main .callout.climate-time-machine {
+    width: 205px;
+    height: 168px;
+    background: url("/resources/design/light-blue-callout-box.png"); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003703}}
+    #main .callout.climate-time-machine a {
+      text-indent: 105%;
+      white-space: nowrap;
+      overflow: hidden;
+      display: block;
+      background: url("/resources/icons/climate-time-machine.png");
+      width: 146px;
+      height: 144px;
+      margin-top: 10px;
+      margin-left: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003713}}
+  #main .callout.video {
+    width: 235px;
+    height: 168px;
+    background: url("/resources/design/orange-callout-box.png");
+    margin-left: -5px;
+    margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003719}}
+    #main .callout.video h2 {
+      color: white;
+      margin-top: 102px;
+      text-indent: 105%;
+      white-space: nowrap;
+      overflow: hidden;
+      background: url("/resources/text/mystery.png");
+      width: 185px;
+      height: 47px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003729}}
+    #main .callout.video span {
+      text-indent: 105%;
+      white-space: nowrap;
+      overflow: hidden;
+      display: block;
+      background: url("/resources/icons/climate-tales.png");
+      width: 196px;
+      height: 93px;
+      margin-left: 25px;
+      margin-top: -5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003738}}
+    #main .callout.video p {
+      color: white;
+      font-size: 12px;
+      width: 80%;
+      margin-top: 0;
+      margin-left: 30px;
+      font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003749}}
+  #main .menu ul {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 0;
+    cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003757}}
+    #main .menu ul li {
+      background-color: #0a673a;
+      -webkit-transition: background-color 0.5s linear;
+      -moz-transition: background-color 0.5s linear;
+      -o-transition: background-color 0.5s linear;
+      -ms-transition: background-color 0.5s linear;
+      transition: background-color 0.5s linear;
+      width: 350px;
+      float: left;
+      display: inline;
+      margin-right: 18px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      color: white;
+      border: 2px solid white;
+      position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003774}}
+      #main .menu ul li.out {
+        background: #004309; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003778}}
+      #main .menu ul li.big {
+        width: 725px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003780}}
+        #main .menu ul li.big img {
+          height: 176px;
+          width: 176px;
+          margin-right: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003786}}
+        #main .menu ul li.big h3 a {
+          padding-left: 205px;
+          width: 500px;
+          height: 190px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003792}}
+        #main .menu ul li.big p {
+          margin-left: 100px;
+          padding-right: 30px;
+          width: 400px;
+          bottom: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003802}}
+      #main .menu ul li img {
+        margin: 5px;
+        margin-right: 10px;
+        border-radius: 10px;
+        border: 2px solid white;
+        float: left;
+        height: 88px;
+        width: 88px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003811}}
+      #main .menu ul li h3 {
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        line-height: 21px;
+        font-size: 1.11em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003817}}
+        #main .menu ul li h3 a {
+          text-decoration: none;
+          color: white;
+          display: block;
+          width: 193px;
+          height: 90px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding-top: 10px;
+          padding-left: 107px;
+          padding-right: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003831}}
+      #main .menu ul li p {
+        position: relative;
+        font-size: 14px;
+        line-height: 15.5px;
+        position: absolute;
+        width: 220px;
+        bottom: -10px;
+        left: 106px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003840}}
+      #main .menu ul li .icon {
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        border: 2px solid white;
+        border-radius: 10px;
+        height: 42px;
+        width: 42px;
+        background: #d6dc3b url("/resources/icons/small-category-icons.png") no-repeat top left;
+        background-position: 9999px 9999px;
+        display: none;
+        text-indent: 105%;
+        white-space: nowrap;
+        overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003852}}
+        #main .menu ul li .icon.home {
+          background-position: 0px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003855}}
+        #main .menu ul li .icon.play {
+          display: block;
+          background-position: -42px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003859}}
+        #main .menu ul li .icon.make {
+          display: block;
+          background-position: -84px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003863}}
+        #main .menu ul li .icon.know {
+          display: block;
+          background-position: -126px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003867}}
+        #main .menu ul li .icon.keep-up {
+          display: block;
+          background-position: -168px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003871}}
+        #main .menu ul li .icon.watch {
+          display: block;
+          background-position: -210px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003875}}
+        #main .menu ul li .icon.dream {
+          display: block;
+          background-position: -252px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003879}}
+        #main .menu ul li .icon.teach {
+          display: block;
+          background-position: -294px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003883}}
+        #main .menu ul li .icon.weather-and-climate {
+          display: block;
+          background-position: -336px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003887}}
+        #main .menu ul li .icon.air {
+          display: block;
+          background-position: -378px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003891}}
+        #main .menu ul li .icon.ocean {
+          display: block;
+          background-position: -420px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003895}}
+        #main .menu ul li .icon.fresh-water {
+          display: block;
+          background-position: -462px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003899}}
+        #main .menu ul li .icon.carbons-travels {
+          display: block;
+          background-position: -504px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003903}}
+        #main .menu ul li .icon.energy {
+          display: block;
+          background-position: -546px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003907}}
+        #main .menu ul li .icon.plants-and-animals {
+          display: block;
+          background-position: -588px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003911}}
+        #main .menu ul li .icon.technology {
+          display: block;
+          background-position: -630px -42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003916}}
+      #main .menu ul li:hover {
+        background-color: #62a954;
+        -webkit-transition: background-color 0.5s linear;
+        -moz-transition: background-color 0.5s linear;
+        -o-transition: background-color 0.5s linear;
+        -ms-transition: background-color 0.5s linear;
+        transition: background-color 0.5s linear; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003930}}
+  #main article, #main #big-questions-wrapper {
+    margin:0 auto;
+    width: 772px;
+    background: #8cc349;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
+    
+#main .menu{
+	margin:0 auto;
+    width: 1010px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003935}}
+    #main article .title-bar, #main #big-questions-wrapper .title-bar {
+      background: #3db14f;
+      background: -moz-linear-gradient(top, #3db14f 0%, #0e6b3b 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3db14f), color-stop(100%, #0e6b3b));
+      background: -webkit-linear-gradient(top, #3db14f 0%, #0e6b3b 100%);
+      background: -o-linear-gradient(top, #3db14f 0%, #0e6b3b 100%);
+      background: -ms-linear-gradient(top, #3db14f 0%, #0e6b3b 100%);
+      background: linear-gradient(to bottom, #3db14f 0%, #0e6b3b 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3db14f', endColorstr='#0e6b3b',GradientType=0 );
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      height: 41px;
+      font-family: "Helvetica", "Arial", sans-serif; }
+      
+#main .menu .title-bar{
+	background: #3db14f;
+	background: -moz-linear-gradient(top, #3db14f 0%, #0e6b3b 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3db14f), color-stop(100%, #0e6b3b));
+	background: -webkit-linear-gradient(top, #3db14f 0%, #0e6b3b 100%);
+	background: -o-linear-gradient(top, #3db14f 0%, #0e6b3b 100%);
+	background: -ms-linear-gradient(top, #3db14f 0%, #0e6b3b 100%);
+	background: linear-gradient(to bottom, #3db14f 0%, #0e6b3b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3db14f', endColorstr='#0e6b3b',GradientType=0 );
+	border-radius: 10px;
+	height: 41px;
+	font-family: "Helvetica", "Arial", sans-serif; 
+}
+
+.menuItemOverview{
+    background:white;
+    border:5px solid #02673d;
+    border-radius:20px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:10px;
+    margin-bottom:50px;
+    margin-top:20px;
+}
+
+.menuItemOverview h2{
+    color:#02673d;
+    font-size:16pt;
+}
+
+.menuItemTwoWide{
+    float:left;
+	width:490px;
+	margin-bottom:20px;
+	max-width:96%;
+	border-radius:30px;
+	border: 4px solid #006838; 
+	box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.4);
+	background: #bbdb98;
+	background: -moz-linear-gradient(top, #bbdb98 0%, #bbdb98 0%, #83c24f 100%);
+	background: -webkit-linear-gradient(top, #bbdb98 0%,#bbdb98 0%,#83c24f 100%);
+	background: linear-gradient(to bottom, #bbdb98 0%,#bbdb98 0%,#83c24f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbdb98', endColorstr='#83c24f',GradientType=0 );
+	text-align:center;
+}
+
+.menuItemTwoWide img{
+	width:95%;
+	max-width:100%;
+	margin-top:10px;
+	border-radius:30px;
+}
+
+.menuItemTwoWide p{
+	margin-top:14px;
+	color:#215401;
+	font-weight:bold;
+	font-size:14pt;
+	padding-left:10px;
+	padding-right:10px;
+	min-height:54px;
+}
+
+.menuItemNASAMissions{
+	background: #d0e191;
+	border:5px solid #02673d;
+	border-radius:20px;
+	box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.4);
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:10px;
+	margin-bottom:50px;
+	margin-top:20px;
+}
+
+.menuItemNASAMissions a{
+	text-decoration: none;
+}
+
+.menuItemNASAMissionsTitle{
+	color:#02673d;
+	font-size:16pt;
+}
+
+.menuItemNASAMission{
+	width:120px;
+	float:left;
+	margin-left:8px;
+	margin-right:8px;
+}
+
+.menuItemNASAMissionIcon{
+	background: #02673d;
+	width:120px;
+	height:120px;
+	border-radius:60px;
+}
+
+.menuItemNASAMissionIcon img{
+	width:100%;
+}
+
+.menuItemNASAMission h3{
+	color:#02673d;
+	font-size: 12pt;
+	text-align:center;
+}
+
+.menuItemForEducators{
+	position:relative;
+	background: #3db14f;
+	background: -moz-linear-gradient(top, #3db14f 0%, #0e6b3b 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3db14f), color-stop(100%, #0e6b3b));
+	background: -webkit-linear-gradient(top, #3db14f 0%, #0e6b3b 100%);
+	background: -o-linear-gradient(top, #3db14f 0%, #0e6b3b 100%);
+	background: -ms-linear-gradient(top, #3db14f 0%, #0e6b3b 100%);
+	background: linear-gradient(to bottom, #3db14f 0%, #0e6b3b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3db14f', endColorstr='#0e6b3b',GradientType=0 );
+	border:5px solid #02673d;
+	border-radius:20px;
+	box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.4);
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:10px;
+	margin-bottom:80px;
+	margin-top:20px;
+}
+
+.menuItemForEducatorsTitle{
+	color:white;
+	font-size:16pt;
+	margin-bottom:0px;
+}
+
+.forEducatorsPartnerHolder{
+	padding-left:120px;
+}
+
+.forEducatorsPartner{
+	float:left;
+	width:140px;
+	margin-left:14px;
+	margin-right:14px;
+	margin-bottom:10px;
+}
+
+.forEducatorsPartner img{
+	max-width:100%;
+}
+
+.forEducatorsBook{
+	position:absolute;
+	bottom:-40px;
+	left:-60px;
+	width:200px;
+}
+
+.forEducatorsBook img{
+	max-width:100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003947}}
+      #main .menu .title-bar .icon-tray, #main article .title-bar .icon-tray, #main #big-questions-wrapper .title-bar .icon-tray {
+        /*                 float:right; */
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        text-align: right;
+        margin-right: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003954}}
+        #main .menu .title-bar .icon-tray .icon, #main article .title-bar .icon-tray .icon, #main #big-questions-wrapper .title-bar .icon-tray .icon {
+          margin-right: -6px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003958}}
+      #main .menu .title-bar .icon, #main article .title-bar .icon, #main #big-questions-wrapper .title-bar .icon {
+        text-indent: 105%;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 42px;
+        height: 42px;
+        top: -2px;
+        left: -52px;
+        margin-right: 10px;
+        display: inline-block;
+        background: url("/resources/icons/small-category-icons.png") no-repeat top left;
+        background-position: 100px 0;
+        display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003972}}
+        #main .menu .title-bar .icon.home, #main article .title-bar .icon.home, #main #big-questions-wrapper .title-bar .icon.home {
+          display: inline-block;
+          background-position: 0 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003977}}
+        #main .menu .title-bar .icon.play, #main article .title-bar .icon.play, #main #big-questions-wrapper .title-bar .icon.play {
+          display: inline-block;
+          background-position: -42px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003981}}
+        #main .menu .title-bar .icon.make, #main article .title-bar .icon.make, #main #big-questions-wrapper .title-bar .icon.make {
+          display: inline-block;
+          background-position: -84px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003985}}
+        #main .menu .title-bar .icon.know, #main article .title-bar .icon.know, #main #big-questions-wrapper .title-bar .icon.know {
+          display: inline-block;
+          background-position: -126px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003989}}
+        #main .menu .title-bar .icon.keep-up, #main article .title-bar .icon.keep-up, #main #big-questions-wrapper .title-bar .icon.keep-up {
+          display: inline-block;
+          background-position: -168px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003993}}
+        #main .menu .title-bar .icon.watch, #main article .title-bar .icon.watch, #main #big-questions-wrapper .title-bar .icon.watch {
+          display: inline-block;
+          background-position: -210px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\00003997}}
+        #main .menu .title-bar .icon.dream, #main article .title-bar .icon.dream, #main #big-questions-wrapper .title-bar .icon.dream {
+          display: inline-block;
+          background-position: -252px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031001}}
+        #main .menu .title-bar .icon.teach, #main article .title-bar .icon.teach, #main #big-questions-wrapper .title-bar .icon.teach {
+          display: inline-block;
+          background-position: -294px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031005}}
+        #main .menu .title-bar .icon.weather-and-climate, #main article .title-bar .icon.weather-and-climate, #main #big-questions-wrapper .title-bar .icon.weather-and-climate {
+          display: inline-block;
+          background-position: -336px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031009}}
+        #main .menu .title-bar .icon.air, #main article .title-bar .icon.air, #main #big-questions-wrapper .title-bar .icon.air {
+          display: inline-block;
+          background-position: -378px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031013}}
+        #main .menu .title-bar .icon.ocean, #main article .title-bar .icon.ocean, #main #big-questions-wrapper .title-bar .icon.ocean {
+          display: inline-block;
+          background-position: -420px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031017}}
+        #main .menu .title-bar .icon.fresh-water, #main article .title-bar .icon.fresh-water, #main #big-questions-wrapper .title-bar .icon.fresh-water {
+          display: inline-block;
+          background-position: -462px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031021}}
+        #main .menu .title-bar .icon.carbons-travels, #main article .title-bar .icon.carbons-travels, #main #big-questions-wrapper .title-bar .icon.carbons-travels {
+          display: inline-block;
+          background-position: -504px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031025}}
+        #main .menu .title-bar .icon.energy, #main article .title-bar .icon.energy, #main #big-questions-wrapper .title-bar .icon.energy {
+          display: inline-block;
+          background-position: -546px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031029}}
+        #main .menu .title-bar .icon.plants-and-animals, #main article .title-bar .icon.plants-and-animals, #main #big-questions-wrapper .title-bar .icon.plants-and-animals {
+          display: inline-block;
+          background-position: -588px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031033}}
+        #main .menu .title-bar .icon.technology, #main article .title-bar .icon.technology, #main #big-questions-wrapper .title-bar .icon.technology {
+          display: inline-block;
+          background-position: -630px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031038}}
+      #main .menu .title-bar h1, #main article .title-bar h1, #main #big-questions-wrapper .title-bar h1 {
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+        padding-top: 2px;
+        height: 41px;
+        line-height: 41px;
+        color: white;
+        text-indent: 10px;
+        float: left;
+        position: relative; }
+        
+#main .menu .title-bar h1 {
+        text-indent: 60px;}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031049}}
+        #main .menu .title-bar h1 .icon, #main article .title-bar h1 .icon, #main #big-questions-wrapper .title-bar h1 .icon {
+          position: absolute;
+          left: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031056}}
+      /*#main .menu .title-bar.energy, #main article .title-bar.energy, #main #big-questions-wrapper .title-bar.energy {
+        background: #f48f31;
+        background: -moz-linear-gradient(top, #f48f31 0%, #ec4c3b 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f48f31), color-stop(100%, #ec4c3b));
+        background: -webkit-linear-gradient(top, #f48f31 0%, #ec4c3b 100%);
+        background: -o-linear-gradient(top, #f48f31 0%, #ec4c3b 100%);
+        background: -ms-linear-gradient(top, #f48f31 0%, #ec4c3b 100%);
+        background: linear-gradient(to bottom, #f48f31 0%, #ec4c3b 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f48f31', endColorstr='#ec4c3b',GradientType=0 ); }*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031071}}
+  #main article {
+    background: white;
+    overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031074}}
+    #main article section {
+      border: 1px solid #71A53F;
+      margin: 20px;
+      padding: 10px;
+      overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031081}}
+    #main article p {
+      margin-top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031085}}
+    #main article .title-bar h2 {
+      text-indent: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031091}}
+  #main article.has-sidebar .main-content {
+    padding-top: 5px;
+    width: 470px;
+    float: left;
+    overflow: hidden;
+    clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031097}}
+    #main article.has-sidebar .main-content.no-sidebar {
+      width: 732px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031100}}
+    #main article.has-sidebar .main-content section {
+      margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031104}}
+  #main article.has-sidebar aside {
+    width: 200px;
+    float: right;
+    margin: 10px;
+    margin-top: 15px;
+    padding: 10px;
+    padding-top: 0;
+    padding-left: 20px; }
+    
+    #main article.has-sidebar aside ol{
+    margin-left:10px;}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031113}}
+    #main article.has-sidebar aside .post-it {
+      background: #f4f999 url("/resources/design/postItTop.jpg") no-repeat top center;
+      width: 172px;
+      margin: 0 auto;
+      padding-top: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      position: relative;
+      margin-top: -17px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031123}}
+      #main article.has-sidebar aside .post-it:after {
+        content: " ";
+        display: block;
+        background: #f4f999 url("/resources/design/postItBottom.jpg") no-repeat top center;
+        width: 192px;
+        height: 22px;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031135}}
+    #main article.has-sidebar aside .note {
+      background: #efeff1 url("/resources/design/noteTop.jpg") no-repeat top center;
+      width: 172px;
+      margin: 0 auto;
+      padding-top: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      position: relative;
+      margin-top: -17px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031145}}
+      #main article.has-sidebar aside .note:after {
+        content: " ";
+        display: block;
+        background: #efeff1 url("/resources/design/noteBottom.jpg") no-repeat top center;
+        width: 192px;
+        height: 28px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031162}}
+.page-title {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031166}}
+html, body {
+  height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031169}}
+#top-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -110px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031175}}
+.push {
+  height: 110px;
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031179}}
+footer {
+  background: #054824;
+  background: -moz-linear-gradient(left, #8cc349 0%, #27401e 20%, #27401e 80%, #8cc349 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #8cc349), color-stop(20%, #27401e), color-stop(80%, #27401e), color-stop(100%, #8cc349));
+  background: -webkit-linear-gradient(left, #8cc349 0%, #27401e 20%, #27401e 80%, #8cc349 100%);
+  background: -o-linear-gradient(left, #8cc349 0%, #27401e 20%, #27401e 80%, #8cc349 100%);
+  background: -ms-linear-gradient(left, #8cc349 0%, #27401e 20%, #27401e 80%, #8cc349 100%);
+  background: linear-gradient(to right, #8cc349 0%, #27401e 20%, #27401e 80%, #8cc349 100%);
+  position: relative;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  color: white;
+  font-size: 12px;
+  min-height: 210px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031196}}
+  footer .container {
+    padding-top: 20px;
+    width: 1010px;
+    margin: 0 auto;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031200}}
+    footer .container #footerKidsGov {
+      position: absolute;
+      bottom: 10px;
+      left: 0; }
+    footer .container #footerGCC {
+      position: absolute;
+      bottom: 10px;
+      right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031205}}
+    footer .container .center {
+      text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031208}}
+      footer .container .center p {
+        margin: 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031211}}
+      footer .container .center nav {
+        margin-top: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031214}}
+      footer .container .center a {
+        text-decoration: none;
+        color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031217}}
+        footer .container .center a:visited {
+          color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031220}}
+        footer .container .center a:hover {
+          color: yellow; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031225}}
+    footer .container .webmaster {
+      font-size: 10px;
+      position: absolute;
+      right: 0;
+      top: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031230}}
+      footer .container .webmaster p {
+        margin: 0;
+        text-align: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031239}}
+.administrator-controls {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031247}}
+article h2 {
+  margin-top: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031252}}
+blockquote {
+  font-style: italic;
+  width: 275px;
+  font-family: "Constantia", "Lucida Bright", "Lucidabright", "Lucida Serif", "Lucida", "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", "Georgia", serif;
+  font-size: 14px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031258}}
+aside blockquote {
+  width: 230px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031261}}
+blockquote.left {
+  float: left;
+  margin-left: -20px;
+  margin-right: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031266}}
+blockquote.right {
+  float: right;
+  margin-left: 20px;
+  margin-right: -20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031271}}
+blockquote p {
+  padding-left: 25px;
+  padding-top: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031275}}
+blockquote .author {
+  display: block;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031281}}
+blockquote .author .source {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031285}}
+blockquote span.big-quote:first-of-type {
+  float: left;
+  display: block;
+  font-size: 50px;
+  height: 24px;
+  width: 36px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031292}}
+blockquote span.big-quote:last-of-type {
+  float: right;
+  display: block;
+  font-size: 50px;
+  height: 24px;
+  width: 36px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031300}}
+.caution, .information {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  background-color: #cc4132;
+  background-image: url("/resources/design/relevant-fact.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  padding: 10px 10px 10px 80px;
+  margin-bottom: 10px;
+  min-height: 75px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031318}}
+  .caution h2, .information h2 {
+    color: white !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031322}}
+.information {
+  background-color: #3cc95d; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031328}}
+.important {
+  width: 220px;
+  font-style: italic;
+  font-size: 18px;
+  display: block;
+  float: left;
+  border-top: 3px solid #030591;
+  border-bottom: 3px solid #030591;
+  padding: 10px 20px;
+  margin: 10px;
+  margin-left: 0;
+  color: #030591; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031341}}
+.important.right {
+  float: right;
+  margin-right: 0;
+  margin-left: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031347}}
+.important.left {
+  float: left;
+  margin-left: 0;
+  margin-right: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031354}}
+aside .important {
+  width: 175px;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031361}}
+.indented {
+  margin-left: 20px;
+  margin-right: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031366}}
+.bold {
+  font-weight: bold;
+  font-size: 18px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031367}}
+.blue {
+  color: blue; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031368}}
+.orange {
+  color: orange; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031369}}
+.white {
+  color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031370}}
+.black {
+  color: black; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031371}}
+.green {
+  color: green; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031372}}
+.purple {
+  color: purple; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031373}}
+.aqua {
+  color: aqua; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031374}}
+.yellow {
+  color: yellow; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031375}}
+.pink {
+  color: pink; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031376}}
+.red {
+  color: red; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031377}}
+.serif {
+  font-family: "Times New Roman", "Times", "serif"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031378}}
+.shadow {
+  text-shadow: 1px 1px 1px #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031379}}
+.smallcaps {
+  font-variant: small-caps; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031380}}
+.italic {
+  font-style: italic; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031381}}
+.bold.big {
+  font-size: 24px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031382}}
+.blur {
+  text-shadow: -2px 0px 1px #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031383}}
+.align-left {
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031384}}
+.align-right {
+  text-align: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031385}}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031387}}
+.size18 {
+  font-size: 18px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031388}}
+.size24 {
+  font-size: 24px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031389}}
+.size32 {
+  font-size: 32px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031390}}
+.size36 {
+  font-size: 36px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031391}}
+.size48 {
+  font-size: 48px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031393}}
+.unpadded {
+  padding: 0 !important;
+  vertical-align: bottom; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031397}}
+.wrap-right, .right {
+  float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031398}}
+.wrap-left, .left {
+  float: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031400}}
+.image-with-caption-right img {
+  float: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031404}}
+.image-with-caption-left img {
+  float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031409}}
+.image-with-caption-right,
+.image-with-caption-left {
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031415}}
+.image-with-caption-right p,
+.image-with-caption-left p {
+  margin-top: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031420}}
+table.basic-table {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031427}}
+table.basic-table.left {
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031430}}
+table.basic-table td {
+  vertical-align: middle;
+  border: 1px solid black;
+  padding: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031435}}
+table.basic-table tr[valign='top'] td {
+  vertical-align: top; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031439}}
+table.center-cells {
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031443}}
+aside img {
+  padding-bottom: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031447}}
+aside {
+  border-left: 1px solid #e4e4e4; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031451}}
+aside ol, aside ul {
+  margin-left: 0;
+  padding-left: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031457}}
+.side-by-side div {
+  float: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031464}}
+.two-columns div,
+.three-columns div,
+.four-columns div,
+.five-columns div {
+  float: left;
+  margin-bottom: 20px;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031469}}
+.two-columns:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031470}}
+.three-columns:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031471}}
+.four-columns:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031472}}
+.five-columns:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031473}}
+.side-by-side:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031475}}
+.five-columns div {
+  width: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031478}}
+.four-columns div {
+  width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031481}}
+.three-columns div {
+  width: 33%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031484}}
+.two-columns div {
+  width: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031489}}
+.left.padded {
+  padding: 5px 5px 5px 0px;
+  float: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031494}}
+.right.padded {
+  padding: 5px 0px 5px 5px;
+  float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031499}}
+.caption.center {
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031503}}
+.center .caption {
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031506}}
+.center .caption.center {
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031510}}
+p.caption {
+  padding: 0 8px;
+  color: #030591; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031515}}
+.content h2 {
+  font-size: 24px;
+  color: #030591;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031522}}
+.content h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #030591;
+  margin-bottom: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031530}}
+.relevant-fact {
+  color: black;
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+  background-image: url("/resources/design/relevant-fact.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  padding: 10px 10px 10px 80px;
+  margin-bottom: 10px;
+  min-height: 75px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031549}}
+.content .relevant-fact h3 {
+  color: white;
+  margin-bottom: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031553}}
+.content .relevant-fact p {
+  margin-bottom: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031557}}
+.yellow-background, .red-background, .blue-background {
+  margin-left: -20px;
+  margin-right: -10px;
+  padding: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031562}}
+.yellow-background {
+  background: #ffff99; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031565}}
+.red-background {
+  background: #ffbebe; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031568}}
+.blue-background {
+  background: #afd9e6; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031574}}
+.click-here-to-play {
+  font-size: 18px;
+  font-weight: 700; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031577}}
+  .click-here-to-play a {
+    text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031582}}
+.source-switcher {
+  background: black;
+  width: 640px;
+  margin: 0;
+  margin-top: -16px;
+  padding-bottom: 10px;
+  padding-top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031589}}
+  .source-switcher a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: left;
+    width: 50%;
+    font-size: 10px;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031597}}
+    .source-switcher a.on, .source-switcher a:hover {
+      color: red; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031600}}
+    .source-switcher a strong {
+      display: block;
+      font-size: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031608}}
+tr[valign="bottom"] td {
+  vertical-align: bottom; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031611}}
+td[valign="bottom"] {
+  vertical-align: bottom; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031615}}
+tr[valign="baseline"] td {
+  vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031618}}
+td[valign="baseline"] {
+  vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031630}}
+aside .planet-health-report p {
+  margin-top: 10px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031635}}
+.planet-health-report {
+  color: black;
+  font-size: 12px;
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031639}}
+  .planet-health-report h3 {
+    display: block;
+    width: 189px;
+    height: 34px;
+    background: url(/resources/text/planet-health-report.png) no-repeat;
+    overflow: hidden;
+    font-size: 0;
+    position: absolute;
+    top: 8px;
+    left: 18px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031650}}
+  .planet-health-report .buttons {
+    margin-left: 13px;
+    margin-top: 0px;
+    float: left;
+    margin-right: 0;
+    position: relative;
+    top: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031658}}
+    .planet-health-report .buttons a {
+      display: block;
+      width: 23px;
+      height: 30px;
+      margin-bottom: -4px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031663}}
+      .planet-health-report .buttons a.phr-air {
+        background: url(/resources/design/hr/air.png) no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031665}}
+        .planet-health-report .buttons a.phr-air:hover {
+          background: url(/resources/design/hr/air-over.png) no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031669}}
+      .planet-health-report .buttons a.phr-temp {
+        background: url(/resources/design/hr/temperature.png) no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031671}}
+        .planet-health-report .buttons a.phr-temp:hover {
+          background: url(/resources/design/hr/temperature-over.png) no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031675}}
+      .planet-health-report .buttons a.phr-sea-ice {
+        background: url(/resources/design/hr/ice.png) no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031677}}
+        .planet-health-report .buttons a.phr-sea-ice:hover {
+          background: url(/resources/design/hr/ice-over.png) no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031681}}
+      .planet-health-report .buttons a.phr-sea-level {
+        background: url(/resources/design/hr/level.png) no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031683}}
+        .planet-health-report .buttons a.phr-sea-level:hover {
+          background: url(/resources/design/hr/level-over.png) no-repeat; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031691}}
+  .planet-health-report .windows div {
+    position: relative;
+    margin-right: 20px;
+    top: 40px;
+    width: 154px;
+    height: 92px;
+    display: block;
+    background: url(/resources/design/hr/bg-labels.png);
+    float: right;
+    display: none;
+    padding: 10px;
+    line-height: 13px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031703}}
+    .planet-health-report .windows div span {
+      font-weight: bold;
+      color: red;
+      display: inline !important;
+      padding: 0;
+      text-indent: 0;
+      margin: 0 !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031711}}
+    .planet-health-report .windows div.labels {
+      top: 38px;
+      font-size: 0;
+      display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031716}}
+    .planet-health-report .windows div.phr-sea-ice {
+      background: url(/resources/design/hr/bg-sea-ice.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031719}}
+    .planet-health-report .windows div.phr-air {
+      background: url(/resources/design/hr/bg-air.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031722}}
+    .planet-health-report .windows div.phr-temp {
+      background: url(/resources/design/hr/bg-temperature.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031725}}
+    .planet-health-report .windows div.phr-sea-level {
+      background: url(/resources/design/hr/bg-sea-level.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031730}}
+  .planet-health-report .info {
+    width: 60%;
+    font-size: 12px;
+    bottom: -5px;
+    position: absolute; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031739}}
+.browse-by-category {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031743}}
+.feedback {
+  padding: 25px;
+  width: 500px;
+  margin: 25px auto;
+  border: 1px solid green;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031749}}
+  .feedback input, .feedback textarea, .feedback select {
+    height: 30px;
+    padding: 2px;
+    font-size: 18px;
+    width: 65%;
+    float: right;
+    display: block;
+    margin-bottom: 3px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031759}}
+  .feedback input[type='submit'] {
+    margin-top: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031763}}
+  .feedback textarea {
+    height: 150px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031766}}
+  .feedback select {
+    margin-top: 3px;
+    margin-bottom: 6px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031770}}
+  .feedback label {
+    float: left;
+    display: block;
+    width: 28%;
+    height: 30px;
+    font-size: 18px;
+    text-align: right;
+    padding: 5px;
+    padding-right: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031782}}
+  .feedback .phone {
+    display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031788}}
+.above-all-home-link {
+  z-index: 2000;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 150px;
+  width: 500px;
+  display: block;
+  background: transparent !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031801}}
+#butterfly-animation {
+  background: url(/resources/animation/butterfly/001.png);
+  width: 1220px;
+  height: 200px;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  z-index: 100;
+  pointer-events: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031812}}
+.frog-eye {
+  height: 30px;
+  width: 50px;
+  background: url(/resources/animation/frog/frogEyeLeft.png);
+  position: absolute;
+  z-index: 90;
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031821}}
+.frog-eye.left {
+  height: 19px;
+  width: 17px;
+  top: 58px;
+  left: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031828}}
+.frog-eye.right {
+  width: 17px;
+  height: 17px;
+  top: 40px;
+  left: 53px;
+  background: url(/resources/animation/frog/frogEyeRight.png); }
+
+/** IE FIXES **/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031849}}
+.lt-ie9 header #climate-kids-header nav {
+  padding-left: 762px;
+  background: url("/resources/ie/top-nav-bg.png") no-repeat center top;
+  position: relative;
+  z-index: 200; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031855}}
+.lt-ie9 #climate-kids-header h1 a {
+  z-index: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031858}}
+.lt-ie9 footer {
+  background: #8bc248 url("/resources/ie/footerbg.png") repeat-y center top !important;
+  display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031864}}
+.lt-ie9 #top-wrapper {
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031868}}
+.lt-ie9 .administrator-controls {
+  display: none !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031872}}
+.lt-ie9 #main .menu ul li p {
+  bottom: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031876}}
+.lt-ie9 #main .menu ul li {
+  height: 120px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031878}}
+  .lt-ie9 #main .menu ul li.big {
+    height: 190px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031883}}
+.lt-ie9 #main .menu {
+  padding-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031887}}
+.lt-ie9 #main .menu a {
+  z-index: 100; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031892}}
+.lt-ie9 .mejs-poster img {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031900}}
+.lt-ie8 header #climate-kids-header nav a.home {
+  float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/global\.scss}line{font-family:\000031903}}
+.lt-ie8 body {
+  background: #CBE2F4; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\000035}}
+#main article .image-with-caption p, #main article .image-with-caption .caption, #main article .image-with-caption figcaption, #main article figure p, #main article figure .caption, #main article figure figcaption {
+  font-size: 12px;
+  color: #05414E;
+  margin-top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000310}}
+#main article .image-with-caption img, #main article figure img {
+  display: block;
+  margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000314}}
+#main article .image-with-caption.center, #main article figure.center {
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000318}}
+#main article .image-with-caption.left, #main article figure.left {
+  float: left;
+  padding-right: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000322}}
+#main article .image-with-caption.right, #main article figure.right {
+  float: right;
+  padding-left: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000327}}
+#main article .main-content {
+  padding: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000332}}
+figcaption, .caption {
+  font-size: 14px !important;
+  font-style: italic;
+  color: #05414E;
+  margin-top: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000340}}
+#main article h1 {
+  font-size: 24px;
+  margin-top: 0;
+  padding-top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000345}}
+#main article h2 {
+  font-size: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000351}}
+.next-generation-standards h3 {
+  clear: both;
+  font-size: 1.5em;
+  padding-top: 40px;
+  text-align: center;
+  margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000357}}
+  .next-generation-standards h3:first-of-type {
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000362}}
+.next-generation-standards dl dt {
+  width: 80px;
+  font-size: 1.1em;
+  text-align: center;
+  float: left;
+  clear: both;
+  margin-top: 20px;
+  background: #eee;
+  padding: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000371}}
+  .next-generation-standards dl dt:first-of-type {
+    margin-top: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000375}}
+.next-generation-standards dl dd {
+  background: #eee;
+  float: right;
+  width: 80%;
+  width: calc(100% - 130px);
+  margin: 0;
+  margin-top: 20px;
+  padding: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000383}}
+  .next-generation-standards dl dd:first-of-type {
+    margin-top: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000386}}
+  .next-generation-standards dl dd > .description {
+    font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000389}}
+  .next-generation-standards dl dd > .clarification {
+    font-style: italic;
+    font-size: .8em;
+    display: block;
+    margin-top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\0000398}}
+.next-generation-standards .relevant-articles .expand {
+  text-decoration: underline;
+  color: blue;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  font-size: .8em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003106}}
+.next-generation-standards .relevant-articles a {
+  text-decoration: none;
+  color: inherit; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003110}}
+.next-generation-standards .relevant-articles ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003114}}
+  .next-generation-standards .relevant-articles ul img {
+    width: 80px;
+    height: 80px;
+    vertical-align: top;
+    padding: 10px;
+    float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003121}}
+  .next-generation-standards .relevant-articles ul li {
+    height: 100px;
+    background: #bede90;
+    margin-top: 8px;
+    padding-right: 10px;
+    overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003128}}
+    .next-generation-standards .relevant-articles ul li:hover {
+      -webkit-transition: background 0.5s;
+      -moz-transition: background 0.5s;
+      transition: background 0.5s;
+      background: #fffad3;
+      cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003133}}
+    .next-generation-standards .relevant-articles ul li .title {
+      display: block;
+      padding-top: 5px;
+      font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003138}}
+    .next-generation-standards .relevant-articles ul li .description {
+      height: 70px;
+      overflow: hidden;
+      display: block;
+      text-overflow: ellipsis; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003148}}
+.science-standards {
+  display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003152}}
+  .science-standards .tab-bar {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003156}}
+    .science-standards .tab-bar a {
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 5px;
+      border: 2px solid black;
+      color: black;
+      margin: 10px;
+      padding: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003164}}
+      .science-standards .tab-bar a.selected {
+        background: black;
+        color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003168}}
+      .science-standards .tab-bar a[href='#disciplinary-core-ideas'] {
+        color: orange; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003170}}
+        .science-standards .tab-bar a[href='#disciplinary-core-ideas'].selected {
+          color: black;
+          background: orange;
+          border-color: orange; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003176}}
+      .science-standards .tab-bar a[href='#science-and-engineering-practices'] {
+        color: blue;
+        border-color: blue; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003179}}
+        .science-standards .tab-bar a[href='#science-and-engineering-practices'].selected {
+          color: white;
+          background: blue;
+          border-color: blue; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003185}}
+      .science-standards .tab-bar a[href='#disciplinary-core-ideas'] {
+        color: #b07300;
+        border-color: orange; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003188}}
+        .science-standards .tab-bar a[href='#disciplinary-core-ideas'].selected {
+          color: black;
+          background: orange;
+          border-color: orange; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003194}}
+      .science-standards .tab-bar a[href='#cross-cutting-concepts'] {
+        color: green;
+        border-color: green; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003197}}
+        .science-standards .tab-bar a[href='#cross-cutting-concepts'].selected {
+          color: black;
+          background: green;
+          border-color: green; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003207}}
+  .science-standards .sheet {
+    margin-top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003210}}
+    .science-standards .sheet h1 {
+      font-size: 1.3em !important;
+      text-align: center;
+      color: white;
+      background: black;
+      cursor: pointer;
+      font-weight: normal;
+      letter-spacing: 1px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003220}}
+    .science-standards .sheet dl {
+      padding-right: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003224}}
+    .science-standards .sheet dt {
+      border: 2px solid green;
+      border-radius: 5px;
+      display: inline-block;
+      padding: 8px;
+      margin-left: 10px;
+      cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003231}}
+      .science-standards .sheet dt input {
+        margin-right: 10px;
+        pointer-events: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003235}}
+      .science-standards .sheet dt.checked {
+        background: green;
+        color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003241}}
+    .science-standards .sheet dd li {
+      font-size: .8em;
+      margin-bottom: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003248}}
+    .science-standards .sheet#disciplinary-core-ideas h1 {
+      background: orange; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003251}}
+    .science-standards .sheet#disciplinary-core-ideas dt {
+      border-color: orange; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003253}}
+      .science-standards .sheet#disciplinary-core-ideas dt.checked {
+        background: orange; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003259}}
+    .science-standards .sheet#science-and-engineering-practices h1 {
+      background: blue; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003262}}
+    .science-standards .sheet#science-and-engineering-practices dt {
+      border-color: blue; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003264}}
+      .science-standards .sheet#science-and-engineering-practices dt.checked {
+        background: blue; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003270}}
+    .science-standards .sheet#cross-cutting-concepts h1 {
+      background: green; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003273}}
+    .science-standards .sheet#cross-cutting-concepts dt {
+      border-color: green; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003275}}
+      .science-standards .sheet#cross-cutting-concepts dt.checked {
+        background: green; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003285}}
+.standards-wrapper .change-sort {
+  display: block;
+  text-align: center;
+  font-size: .9em;
+  margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003290}}
+  .standards-wrapper .change-sort a {
+    border: 1px solid blue;
+    padding: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 5px;
+    text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003298}}
+  .standards-wrapper .change-sort .sort-selected {
+    background: blue;
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003303}}
+.standards-wrapper .science-standards h1, .standards-wrapper .science-standards dt, .standards-wrapper .science-standards dd {
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003307}}
+.standards-wrapper dd > p:first-of-type {
+  margin-top: 20px !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003311}}
+.standards-wrapper .science-standards .article-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003317}}
+  .standards-wrapper .science-standards .article-list a {
+    text-decoration: none;
+    color: inherit; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003321}}
+  .standards-wrapper .science-standards .article-list li {
+    position: relative;
+    height: 60px;
+    background: #eee;
+    margin-bottom: 10px;
+    width: 320px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: baseline;
+    float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003331}}
+    .standards-wrapper .science-standards .article-list li:hover {
+      background: #fffad0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003334}}
+    .standards-wrapper .science-standards .article-list li img {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 50px;
+      height: 50px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003341}}
+    .standards-wrapper .science-standards .article-list li p {
+      padding-left: 70px;
+      overflow: hidden;
+      bottom: 5px;
+      left: 70px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003346}}
+      .standards-wrapper .science-standards .article-list li p.title {
+        font-size: 1.2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/article-styles\.scss}line{font-family:\00003349}}
+      .standards-wrapper .science-standards .article-list li p.description {
+        font-size: .9em;
+        position: absolute;
+        line-height: 1em;
+        left: 0;
+        bottom: -5px;
+        text-overflow: ellipsis;
+        height: auto; }
+
+/* fancyBox v2.0.6 fancyapps.com | fancyapps.com/fancybox/#license */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\000032}}
+.fancybox-tmp iframe, .fancybox-tmp object {
+  vertical-align: top;
+  padding: 0;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\000038}}
+.fancybox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8020; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\0000315}}
+.fancybox-skin {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background: #f9f9f9;
+  color: #444;
+  text-shadow: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\0000327}}
+.fancybox-opened {
+  z-index: 8030; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\0000331}}
+.fancybox-opened .fancybox-skin {
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\0000337}}
+.fancybox-outer, .fancybox-inner {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  outline: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\0000344}}
+.fancybox-inner {
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\0000348}}
+.fancybox-type-iframe .fancybox-inner {
+  -webkit-overflow-scrolling: touch; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\0000352}}
+.fancybox-error {
+  color: #444;
+  font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\0000359}}
+.fancybox-image, .fancybox-iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  vertical-align: top; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\0000369}}
+.fancybox-image {
+  max-width: 100%;
+  max-height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\0000374}}
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+  background-image: url("/resources/libs/fancybox/fancybox_sprite.png"); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\0000378}}
+#fancybox-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -22px;
+  background-position: 0 -108px;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 8020; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\0000390}}
+#fancybox-loading div {
+  width: 44px;
+  height: 44px;
+  background: url("/resources/libs/fancybox/fancybox_loading.gif") center center no-repeat; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\0000396}}
+.fancybox-close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 8040; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003106}}
+.fancybox-nav {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  cursor: pointer;
+  background: transparent url("/resources/libs/fancybox/blank.gif");
+  /* helps IE */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  z-index: 8040; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003117}}
+.fancybox-prev {
+  left: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003121}}
+.fancybox-next {
+  right: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003125}}
+.fancybox-nav span {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 34px;
+  margin-top: -18px;
+  cursor: pointer;
+  z-index: 8040;
+  visibility: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003136}}
+.fancybox-prev span {
+  left: 20px;
+  background-position: 0 -36px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003141}}
+.fancybox-next span {
+  right: 20px;
+  background-position: 0 -72px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003146}}
+.fancybox-nav:hover span {
+  visibility: visible; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003150}}
+.fancybox-tmp {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  padding: 0;
+  overflow: visible;
+  visibility: hidden; }
+
+/* Overlay helper */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003161}}
+#fancybox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  z-index: 8010;
+  background: #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003171}}
+#fancybox-overlay.overlay-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+
+/* Title helper */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003179}}
+.fancybox-title {
+  visibility: hidden;
+  font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  position: relative;
+  text-shadow: none;
+  z-index: 8050; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003187}}
+.fancybox-opened .fancybox-title {
+  visibility: visible; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003191}}
+.fancybox-title-float-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-bottom: -35px;
+  z-index: 8030;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003200}}
+.fancybox-title-float-wrap .child {
+  display: inline-block;
+  margin-right: -100%;
+  padding: 2px 20px;
+  background: transparent;
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  text-shadow: 0 1px 2px #222;
+  color: #FFF;
+  font-weight: bold;
+  line-height: 24px;
+  white-space: nowrap; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003216}}
+.fancybox-title-outside-wrap {
+  position: relative;
+  margin-top: 10px;
+  color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003222}}
+.fancybox-title-inside-wrap {
+  margin-top: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/jquery\.fancybox\.scss}line{font-family:\00003226}}
+.fancybox-title-over-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\000031}}
+#big-questions-wrapper {
+  background: transparent !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\000035}}
+.big-questions-menus {
+  width: 750px;
+  height: 800px;
+  cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\000039}}
+  .big-questions-menus .bq-menu {
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    width: 750px;
+    height: 750px;
+    z-index: 5;
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\0000317}}
+    .big-questions-menus .bq-menu img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\0000324}}
+      .big-questions-menus .bq-menu img.under {
+        z-index: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\0000327}}
+      .big-questions-menus .bq-menu img.over {
+        z-index: 10; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\0000332}}
+    .big-questions-menus .bq-menu .slices img {
+      z-index: 4; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\0000337}}
+    .big-questions-menus .bq-menu .hover-slices img {
+      display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\0000343}}
+.big-questions-menus .bq-menu.top-level-menu {
+  z-index: 10; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\0000347}}
+.start-here {
+  position: absolute;
+  top: 20px;
+  left: 380px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\0000353}}
+.bq-content {
+  margin-top: -665px;
+  background: white;
+  display: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  clear: both;
+  overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\0000361}}
+  .bq-content .answer {
+    padding: 25px;
+    padding-top: 10px;
+    clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\0000368}}
+.title-bar {
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\0000372}}
+.icon-tray {
+  left: 10px;
+  top: 150px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\0000377}}
+.next, .prev {
+  display: block;
+  width: 103px;
+  height: 61px;
+  background-image: url("/resources/design/arrows.png");
+  text-indent: -8888px;
+  margin: 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\0000385}}
+.next {
+  background-position: -103px 0;
+  float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/big-questions\.scss}line{font-family:\0000389}}
+.prev {
+  background-position: 0 0;
+  float: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\000031}}
+.slide-container > img {
+  width: 100%;
+  visibility: hidden; }
+
+@media (max-width: 895px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\000039}}
+  #administrator-controls,
+  .administrator-controls {
+    display: none !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000314}}
+  [data-animation],
+  .frog-eye {
+    display: none !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000319}}
+  body,
+  #main {
+    width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000323}}
+  #main #featured-content {
+    background: none;
+    float: none;
+    margin: 0;
+    width: 100%;
+    max-width: 645px;
+    height: auto;
+    margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000332}}
+    #main #featured-content .slide-container {
+      height: auto;
+      width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000339}}
+    #main #featured-content .slide-circles,
+    #main #featured-content .pause-indicator {
+      display: none !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000342}}
+    #main #featured-content .slide-wrapper {
+      margin: 0;
+      width: 100%;
+      max-width: 645px;
+      height: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000347}}
+      #main #featured-content .slide-wrapper .slide {
+        margin: 0;
+        top: 0;
+        left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000351}}
+        #main #featured-content .slide-wrapper .slide a img {
+          border-radius: 0;
+          width: 100%;
+          max-width: 645px;
+          height: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000357}}
+        #main #featured-content .slide-wrapper .slide .ribbon {
+          width: 100%;
+          bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000361}}
+          #main #featured-content .slide-wrapper .slide .ribbon:after, #main #featured-content .slide-wrapper .slide .ribbon:before {
+            display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000365}}
+        #main #featured-content .slide-wrapper .slide h1 {
+          font-size: .8em;
+          left: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000373}}
+  header {
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003105}}
+    header #nasa-header .container {
+      width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003107}}
+      header #nasa-header .container span {
+        max-width: 336px;
+        width: 40%;
+        line-height: 24px;
+        top: 25px;
+        position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003114}}
+      header #nasa-header .container #search {
+        left: -5px;
+        width: 250px;
+        max-width: 30%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003118}}
+        header #nasa-header .container #search input {
+          width: 90%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003121}}
+        header #nasa-header .container #search:after {
+          display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003127}}
+    header #climate-kids-header {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      top: -30px;
+      margin-bottom: -80px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003133}}
+      header #climate-kids-header h1 {
+        line-height: 0;
+        font-size: 0;
+        padding-top: 15px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        height: 170px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003158}}
+      header #climate-kids-header #global-climate-change-plug h2 a {
+        right: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003164}}
+      header #climate-kids-header nav {
+        display: block;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        top: -30px;
+        background: #CBDA62;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        line-height: 0;
+        height: auto;
+        padding-bottom: 20px;
+        overflow: hidden;
+        padding-left: 5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003179}}
+        header #climate-kids-header nav:after {
+          display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003182}}
+        header #climate-kids-header nav:before {
+          display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003185}}
+        header #climate-kids-header nav div {
+          width: 125px;
+          height: 35px;
+          text-align: center;
+          vertical-align: baseline;
+          float: left;
+          position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003193}}
+        header #climate-kids-header nav a {
+          display: inline-block;
+          float: none;
+          margin: 0;
+          padding: 0;
+          vertical-align: baseline;
+          clear: both;
+          margin-bottom: 0;
+          height: 35px;
+          position: relative;
+          text-indent: 1000000px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003206}}
+        header #climate-kids-header nav a.play {
+          margin-bottom: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003213}}
+  .browse-by-category {
+    display: block;
+    width: 100%;
+    background: #CBDA62;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #0B673A;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003225}}
+    .browse-by-category .hide {
+      display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003228}}
+    .browse-by-category a {
+      color: inherit;
+      text-decoration: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003235}}
+  #main:target .browse-by-category .show {
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003238}}
+  #main:target .browse-by-category .hide {
+    display: inline; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003242}}
+  #main:target nav {
+    margin: 0 auto;
+    display: none;
+    display: block;
+    padding: 20px;
+    padding-top: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    height: 560px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003254}}
+    #main:target nav a {
+      width: 100%;
+      background: black;
+      margin: 0 !important;
+      height: 50px;
+      padding: 0 !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003260}}
+      #main:target nav a:hover {
+        left: inherit !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003263}}
+      #main:target nav a.big-questions {
+        background: #8cc349 url(/resources/design/responsive-menu-sprite.png) no-repeat center top;
+        display: none;
+        height: 100px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003268}}
+      #main:target nav a.big-questions-menu {
+        background: #8cc349 url(/resources/design/responsive-menu-sprite.png) no-repeat center top;
+        height: 112px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003272}}
+      #main:target nav a.weather-and-climate {
+        background: #64318e url(/resources/design/responsive-menu-sprite.png) no-repeat center -165px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003275}}
+      #main:target nav a.air {
+        background: #31aade url(/resources/design/responsive-menu-sprite.png) no-repeat center -215px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003278}}
+      #main:target nav a.ocean {
+        background: #2c3b8d url(/resources/design/responsive-menu-sprite.png) no-repeat center -265px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003281}}
+      #main:target nav a.fresh-water {
+        background: #2277b9 url(/resources/design/responsive-menu-sprite.png) no-repeat center -315px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003284}}
+      #main:target nav a.carbons-travels {
+        background: #8f2c8c url(/resources/design/responsive-menu-sprite.png) no-repeat center -368px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003287}}
+      #main:target nav a.energy {
+        background: #ee5b33 url(/resources/design/responsive-menu-sprite.png) no-repeat center -420px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003290}}
+      #main:target nav a.plants-and-animals {
+        background: #0a673a url(/resources/design/responsive-menu-sprite.png) no-repeat center -470px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003293}}
+      #main:target nav a.technology {
+        background: #26245f url(/resources/design/responsive-menu-sprite.png) no-repeat center -520px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003300}}
+  #main nav {
+    float: none;
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003309}}
+  header:after {
+    width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003315}}
+  #main:before {
+    width: 100%;
+    left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003319}}
+  #main:after {
+    display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003324}}
+  footer {
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003326}}
+    footer .container {
+      width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003331}}
+  #main .index-callout {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 50% !important;
+    display: inline-block;
+    height: 168px !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003341}}
+    #main .index-callout.planet-health-report {
+      background: #CFDF95; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003343}}
+      #main .index-callout.planet-health-report h3 {
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: -30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003351}}
+      #main .index-callout.planet-health-report .windows {
+        float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003355}}
+    #main .index-callout.climate-time-machine {
+      background: #85C4E8; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003357}}
+      #main .index-callout.climate-time-machine a {
+        margin: 10px auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003361}}
+    #main .index-callout.video {
+      background: #ED4F3A; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003363}}
+      #main .index-callout.video h2 {
+        margin: 10px auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003367}}
+      #main .index-callout.video span {
+        margin: 0;
+        margin-top: -10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003371}}
+      #main .index-callout.video a {
+        display: block;
+        width: 193px;
+        margin: 10px auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003376}}
+      #main .index-callout.video p {
+        width: 100%;
+        margin: 5px 0;
+        padding: 0;
+        text-indent: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003386}}
+  #main .menu {
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003388}}
+    #main .menu ul {
+      overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003390}}
+      #main .menu ul li {
+        width: 47%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003391}}
+        #main .menu ul li .icon {
+          display: none !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003394}}
+        #main .menu ul li.big {
+          width: 95%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003414}}
+          #main .menu ul li.big p {
+            width: 60%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003422}}
+        #main .menu ul li p {
+          width: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003430}}
+  #main article {
+    width: 100%; }
+    #main article .main-content {
+  padding: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003440}}
+    #main article > p, #main article > img, #main article > table, #main article > video,
+    #main article section > p,
+    #main article section > img,
+    #main article section > table,
+    #main article section > video {
+      max-width: 95% !important;
+      height: auto !important; }
+      
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003458}}
+    #main article aside {
+      /*
+                  & > div{
+                      margin-left: 0;
+                  }
+      */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003466}}
+    #main article section {
+      margin: 15px auto !important;
+      margin-left: -10px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003472}}
+  footer {
+     }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003474}}
+    footer .center {
+      margin-top: 60px;
+      width: 90%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003478}}
+    footer .webmaster {
+      margin-right: 10px;
+      margin-top: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003485}}
+  .yellow-background,
+  .blue-background {
+    padding: 10px;
+    margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003489}}
+  .search-results {
+    display: none !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003492}}
+  .icon-tray {
+    display: none; }
+
+  /*
+      #main #big-questions-wrapper{
+          width: 100%;
+          height: auto;
+          float:none;
+          .big-questions-menus{
+              width: 100%;
+              height: auto;
+              div{
+                  width: 100%;
+                  height: auto;
+                  img{
+                      width: 100%;
+                      height: auto;
+                  }
+              }
+          }
+      }
+  */ }
+  @media (max-width: 895px) and (max-width: 442px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000373}}
+    header {
+      background-position-y: 75px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000377}}
+      header #nasa-header {
+        height: 75px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000380}}
+        header #nasa-header img {
+          height: 80%;
+          margin-top: 3px;
+          margin-left: 3px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000385}}
+        header #nasa-header span a {
+          display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000388}}
+        header #nasa-header .container div#search {
+          position: absolute;
+          top: 15px;
+          right: 5px;
+          left: auto;
+          padding: 0;
+          margin: 0;
+          width: 70%;
+          max-width: 70%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\0000397}}
+          header #nasa-header .container div#search input {
+            height: 80%; } }
+    @media (max-width: 895px) and (max-width: 442px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003142}}
+      header #climate-kids-header h1 {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 0px;
+        width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003148}}
+        header #climate-kids-header h1 a {
+          background-size: 120%;
+          left: -10%;
+          width: 110%;
+          background-repeat: no-repeat;
+          background-position: 12% center;
+          min-width: 320px; } }
+      @media (max-width: 895px) and (max-width: 644px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003158}}
+        header #climate-kids-header #global-climate-change-plug h2 a {
+          display: none; } }
+  @media (max-width: 895px) and (max-width: 442px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003331}}
+    #main .index-callout {
+      width: 100% !important; } }
+        @media (max-width: 895px) and (max-width: 540px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003394}}
+          #main .menu ul li.big {
+            height: 190px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003398}}
+            #main .menu ul li.big img {
+              width: 80px;
+              height: 80px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003402}}
+            #main .menu ul li.big p {
+              margin-left: 0;
+              padding-left: 0;
+              font-size: .8em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003410}}
+            #main .menu ul li.big h3 a {
+              padding-left: 105px; } }
+            @media (max-width: 895px) and (max-width: 540px) and (max-width: 400px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003402}}
+              #main .menu ul li.big p {
+                font-size: .6em; } }
+      @media (max-width: 895px) and (max-width: 770px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003390}}
+        #main .menu ul li {
+          width: 95%; } }
+  @media (max-width: 895px) and (max-width: 772px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/web\/climatekids\/css\/sass\/responsive\.scss}line{font-family:\00003450}}
+    #main article .main-content,
+    #main article aside {
+      position: relative;
+      width: 95% !important;
+      margin: 0 auto !important; } }
+/** Mobile Version **/
+/*
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+
+    header {
+        #nasa-header{
+            height: 40px;
+            img{
+                height: 30px;
+                margin:5px;
+            }
+            span{
+                font-size: 12px;
+                width:150px;
+                line-height: 15px;
+                margin-top:5px;
+                margin-left:0;
+            }
+        }
+    }
+
+}
+*/

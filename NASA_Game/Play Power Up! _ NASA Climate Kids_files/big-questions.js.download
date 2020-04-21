@@ -1,0 +1,499 @@
+
+var $firstMenuSelected;
+var $secondMenuSelected;
+var firstMenuSectionIndex;
+var secondMenuSectionIndex;
+
+var sectionHovered;
+var $menuHovered;
+
+var largeMenuSize = {width: 750, height:750};
+var smallMenuSize = {width:120, height:120};
+var topLevelMenuPosition = {x: 250, y:50};
+var secondLevelMenuPosition = {x:885, y:0};
+
+var largeMenuPosition = {left: 250, top: 50};
+
+var menus;
+
+var STATUS_HIDDEN = 1;
+var STATUS_LARGE = 2;
+var STATUS_SMALL_LEFT = 4;
+var STATUS_SMALL_RIGHT = 8;
+
+$(function(){
+    
+    $firstMenuSelected = null;
+    $secondMenuSelected = null;
+    
+    $(".bq-menu:visible").click(bqMenuClickHandler);
+    $(".bq-menu:visible").mousemove(bqMenuHover);
+    
+
+    
+    menus = [];
+    $(".bq-menu").each(function(){
+        
+        var nexts = [];
+        var slugs = [];
+        $(this).find(".slices img").each(function(){
+
+            nexts.push($(this).attr('data-next'));
+            if ($(this).attr('data-slug') != undefined){
+                slugs.push($(this).attr('data-slug'));
+            } else {
+                slugs.push($(this).attr('data-next'));
+            }
+        });
+        
+        var fullClass = $(this).attr('class');
+        fullClass = fullClass.replace("second-level-menu", "");
+        fullClass = fullClass.replace("bq-menu", "");
+        fullClass = $.trim(fullClass);
+        
+        var status = STATUS_HIDDEN;
+        
+        newMenu = {
+            'jqObject': $(this),
+            'domObject': this,
+            'numberOfSlices': $(this).find(".slices img").length,
+            'nexts': nexts,
+            'slugs': slugs,
+            'name': fullClass,
+            'status': status,
+            'changeStatus': changeStatus,
+            'mouseOver': menuMouseOver,
+            'mouseClick': menuMouseClick
+        };
+        newMenu.jqObject.attr('data-menu-index', menus.length);
+        newMenu.jqObject.mousemove(function(e){
+            menus[parseInt($(this).attr('data-menu-index'))].mouseOver(e);
+        });
+        newMenu.jqObject.click(function(e){
+            menus[parseInt($(this).attr('data-menu-index'))].mouseClick(e);
+        });
+        menus.push(newMenu);
+        
+    });
+    
+
+    $(window).hashchange(function(){
+        processHash(window.location.hash);
+    });
+    $(window).hashchange();
+    
+    $(".bq-content .next").click(bqNext);
+    $(".bq-content .prev").click(bqPrevious);
+      
+});
+
+function secondSelectedMenu(){
+    for (var i = 0; i < menus.length; i++){
+        if (menus[i].status == STATUS_SMALL_RIGHT) return menus[i];
+    }
+    return null;
+}
+
+function firstSelectedMenu(){
+    for (var i = 0; i < menus.length; i++){
+        if (menus[i].status == STATUS_SMALL_LEFT) return menus[i];
+    }
+    return null;
+}
+
+function advanceHighlight(){
+
+    var slugs = window.location.hash.split("/");
+    
+    var firstMenu = firstSelectedMenu();
+    var secondMenu = secondSelectedMenu();
+    
+    if (firstMenu){
+        var $this = firstMenu.jqObject;
+        var $targetSlice = $this.find('.slices img').filter("[data-slug='"+slugs[1]+"'], [data-next='"+slugs[1]+"']");
+        var sectionHovered = $this.find(".slices img").index($targetSlice);
+        var $target = $($this.find(".hover-slices img").get(sectionHovered));
+        
+        $this.find(".hover-slices img:visible").not($($this.find(".hover-slices img").get(sectionHovered))).fadeOut();
+        
+        $target.filter(":hidden").fadeIn(function(){
+            $this.find(".hover-slices img:visible").not($($this.find(".hover-slices img").get(sectionHovered))).fadeOut();
+        });
+        
+    }
+    if (secondMenu){
+    
+        var $this = secondMenu.jqObject;
+        var $targetSlice = $this.find('.slices img').filter("[data-slug='"+slugs[2]+"'], [data-next='"+slugs[2]+"']");
+        var sectionHovered = $this.find(".slices img").index($targetSlice);
+        var $target = $($this.find(".hover-slices img").get(sectionHovered));
+        
+        $this.find(".hover-slices img:visible").not($($this.find(".hover-slices img").get(sectionHovered))).fadeOut();
+        
+        $target.filter(":hidden").fadeIn(function(){
+            $this.find(".hover-slices img:visible").not($($this.find(".hover-slices img").get(sectionHovered))).fadeOut();
+        });
+    
+    }
+    
+    setTimeout(function(){
+        
+        if (firstMenu != null && secondMenu != null) $(".start-here:visible").fadeOut();
+        else                                         $(".start-here:hidden").fadeIn();
+        
+    }, 100);
+
+
+}
+
+function bqNext(){
+    
+    
+    var slugs = window.location.hash.split("/");
+    var $wheel = menuWithName(slugs[1]);
+    var $next = $wheel.jqObject.find("[data-slug='"+slugs[2]+"']").next();
+    
+    if ($next.length == 0){
+        window.location.hash = "";
+        return false;
+    }
+    
+    slugs[2] = $next.attr('data-slug');
+    window.location.hash = "/" + slugs[1] + "/" + slugs[2];
+    
+    
+    return false;
+}
+
+function bqPrevious(){
+    var slugs = window.location.hash.split("/");
+    var $wheel = menuWithName(slugs[1]);
+    var $prev = $wheel.jqObject.find("[data-slug='"+slugs[2]+"']").prev();
+    
+    if ($prev.length == 0){
+        window.location.hash = "";
+        return false;
+    }
+    
+    slugs[2] = $prev.attr('data-slug');
+    window.location.hash = "/" + slugs[1] + "/" + slugs[2];
+    
+    
+    return false;
+}
+
+/** Menu Functions **/
+
+function menuMouseOver(e){
+
+    if (this.status != STATUS_LARGE) return;
+
+    sectionHovered = sectionForE(this.jqObject, e);
+    
+    var $this = this.jqObject;
+    
+    var $target =  $(this.jqObject.find(".hover-slices img").get(sectionHovered));
+    this.jqObject.find(".hover-slices img:visible:not(:animated)").not($target).fadeOut();
+    $target.filter(":hidden").fadeIn(function(){
+        $this.find(".hover-slices img:visible").not($($this.find(".hover-slices img").get(sectionHovered))).fadeOut();
+    });
+}
+
+function menuMouseClick(e){
+    
+    if (this.status == STATUS_SMALL_LEFT){
+        
+        window.location.hash = "";
+        
+    } else if (this.status == STATUS_SMALL_RIGHT){
+    
+        var oldHash = window.location.hash.trim("/");
+        var split = oldHash.split("/");
+        var splice = split.splice(1,1);
+        var newHash = splice[0];
+        
+        
+        
+        window.location.hash = "/" + newHash;
+        
+    } else if (this.status == STATUS_LARGE){
+        
+        sectionHovered = sectionForE(this.jqObject, e);
+        
+        var $target =  $(this.jqObject.find(".slices img").get(sectionHovered));
+        var next = $target.attr('data-next');
+        var slug = $target.attr('data-slug');
+        if (slug == undefined) slug = next;
+        
+        window.location.hash = window.location.hash + "/" + slug;
+        
+    }
+    
+    
+    
+}
+
+function changeStatus(targetStatus){
+    //if the status is going to STATUS_HIDDEN (1), we just want to fade it out.
+    if (targetStatus == STATUS_HIDDEN){
+        if (this.status == STATUS_HIDDEN) return;
+        this.jqObject.fadeOut(function(){
+            //after we fade it out, set its width and height to normal.
+            $(this).css('width', largeMenuSize.width).css('height', largeMenuSize.height).css('left', largeMenuPosition.left).css('top', largeMenuPosition.top);
+        });
+    }
+    
+    if (targetStatus == STATUS_LARGE){
+        if (this.status < targetStatus){
+            //it was hidden before, lets just fade it in.
+            this.jqObject.fadeIn();
+        } else {
+            //it was small before
+            this.jqObject.animate({'width':largeMenuSize.width, 'height':largeMenuSize.height, 'left': largeMenuPosition.left, 'top':largeMenuPosition.top}, 750);
+        }
+    }
+    
+    if (targetStatus == STATUS_SMALL_LEFT || targetStatus == STATUS_SMALL_RIGHT){
+        var left = topLevelMenuPosition.x;
+        if (targetStatus == STATUS_SMALL_RIGHT) left = secondLevelMenuPosition.x;
+        if (this.status == STATUS_HIDDEN){
+            this.jqObject.css('width', smallMenuSize.width).css('height', smallMenuSize.height).css('left', left).css('top', 0);
+            this.jqObject.fadeIn();
+        } else if (this.status == STATUS_LARGE){
+            this.jqObject.animate({'width': smallMenuSize.width, 'height': smallMenuSize.height, 'left': left, 'top':0}, 750)  
+        }
+    }
+    
+    this.status = targetStatus;    
+
+}
+/** END MENU FUNCTIONS **/
+
+function menuWithName(name){
+    if (name == null || name == undefined) return null;
+    for (var i = 0; i < menus.length; i++){
+        var menu = menus[i];
+        if (menu.name == name) return menu;
+    }
+    return null;
+}
+
+function loadState(firstNext, secondNext){
+    
+    $(".bq-content").hide();
+    
+//    if (firstNext == undefined || secondNext == undefined) return;
+    
+    if (firstNext == undefined || firstNext == "" || firstNext == null) firstNext = null;
+    if (secondNext == undefined || secondNext == "" || secondNext == null) secondNext = null;
+    
+    if (firstNext == null){
+        for (var i = 0; i < menus.length; i++){
+            var menu = menus[i];
+            if (menu.name == 'top-level-menu') menu.changeStatus(STATUS_LARGE);
+            else                               menu.changeStatus(STATUS_HIDDEN);   
+        }
+    } else if (secondNext == null){
+        //first menu is not null, so we need to show push it up
+        for (var i = 0; i < menus.length; i++){
+            var menu = menus[i];
+            if (menu.name == 'top-level-menu') menu.changeStatus(STATUS_SMALL_LEFT);
+            else if (menu.name == firstNext)   menu.changeStatus(STATUS_LARGE);
+            else                               menu.changeStatus(STATUS_HIDDEN);
+        }
+    } else {
+        
+        for (var i = 0; i < menus.length; i++){
+            var menu = menus[i];
+            if (menu.name == 'top-level-menu') menu.changeStatus(STATUS_SMALL_LEFT);
+            else if (menu.name == firstNext)   menu.changeStatus(STATUS_SMALL_RIGHT);
+            else                               menu.changeStatus(STATUS_HIDDEN);
+        }
+        
+        var url = menuWithName(firstNext).jqObject.find(".slices img[data-slug='"+secondNext+"'], .slices img[data-next='"+secondNext+"']").attr('data-next');
+        showContent(url);
+        
+    }
+    
+}
+
+function showContent(url){
+    $.get(url, {}, function(data){
+        $(".bq-content .answer").html(data);
+        $(".bq-content").fadeIn(500, function(){
+            mediaSetup();
+        });
+        
+        $(".bq-content .title-bar h2").text($(".bq-content .answer h2").text());
+        $(".bq-content .answer h2").remove();
+        
+        initializeFancyBox($(".bq-content .answer"));
+        $(".bq-content img").not("[src^='/']").each(function(){
+        
+            var parts = url.split("/");
+            parts.pop();
+            var baseUrl = parts.join("/");
+        
+            var newSrc = $(this).attr('src');
+            newSrc = baseUrl + "/" + newSrc;
+            $(this).attr('src', newSrc);
+        });
+        
+    });
+}
+
+
+
+
+function processHash(hash){
+
+    var slugs = hash.split("/");
+    loadState(slugs[1], slugs[2]);
+    advanceHighlight();
+
+}
+
+function bqMenuHover(e){
+    
+    $menuHovered = $(this);
+    sectionHovered = sectionForE($menuHovered, e);
+    
+    var $target =  $($menuHovered.find(".hover-slices img").get(sectionHovered));
+    $menuHovered.find(".hover-slices img:visible:not(:animated)").not($target).fadeOut();
+    $target.filter(":hidden").fadeIn(function(){
+        $menuHovered.find(".hover-slices img:visible").not($($menuHovered.find(".hover-slices img").get(sectionHovered))).fadeOut();
+    });
+
+}
+
+function sectionForE($menuClicked, e){
+    var parentOffset = $menuClicked.parent().offset();
+    var numberOfSections = $menuClicked.find(".slices img").length;
+    
+    var relX = (e.pageX - parentOffset.left) - $menuClicked.width()/2;
+    var relY = $menuClicked.height()/2 - (e.pageY - parentOffset.top);
+    
+    var distance = Math.sqrt((relX * relX) + (relY * relY));
+    var angle = Math.acos(relY / distance) * (180 / Math.PI);
+    if (relX < 0) angle = 180 + (180 - angle);
+    
+    var raw =  Math.floor(angle / (360 / numberOfSections));
+    raw += 1;
+    if (raw >= numberOfSections) raw = 0;
+    return raw;
+}
+
+function backToFirst(){
+
+//    $firstMenuSelected.unbind('click');
+
+    
+    $firstMenuSelected.animate({'width':750, 'height':750, 'left': 250}, 1500, function(){
+        $firstMenuSelected.click(bqMenuClickHandler);
+        $firstMenuSelected.mousemove(bqMenuHover);
+        $firstMenuSelected = null;
+        $secondMenuSelected = null;
+    });
+    
+    $(".bq-menu:visible").not($firstMenuSelected).fadeOut().animate({'width':750, 'height':750, 'left': 250}, 50, function(){
+
+    });
+
+    $(".bq-content:visible").fadeOut();
+    
+}
+
+function backToSecond(){
+    
+    
+//    $secondMenuSelected.unbind('click');
+    $secondMenuSelected.animate({'width':750, 'height':750, 'left': 250}, 1500, function(){
+        $secondMenuSelected.click(bqMenuClickHandler);
+        $secondMenuSelected.mousemove(bqMenuHover);
+        $secondMenuSelected = null;
+    });
+    
+    $(".bq-content:visible").fadeOut();
+    
+}
+
+function bqMenuClickHandler(e){
+    
+    var sectionClicked = sectionForE($(this), e);
+    menuClicked($(this), sectionClicked);
+    
+}
+
+function menuClicked($menu, sectionNumber){
+
+    var slug;
+
+    if ($firstMenuSelected == null){
+        $firstMenuSelected = $menu;
+        firstMenuSectionIndex = sectionNumber;
+        
+        
+//        $firstMenuSelected.unbind("mousemove");
+//        $firstMenuSelected.unbind("click");
+        
+        var $attributedImg = $($firstMenuSelected.find(".slices img").get(firstMenuSectionIndex));
+        $next = $("."+$attributedImg.attr('data-next'));
+        
+        slug = $attributedImg.attr('data-slug');
+        if (slug == undefined){
+            slug = $attributedImg.attr('data-next');
+        }
+        
+        
+        
+        $firstMenuSelected.animate({'width':120, 'height':120, 'left': toplevelMenuPosition.x, 'top':toplevelMenuPosition.y}, 1500, function(){
+            $next.fadeIn(1500);
+            $next.click(bqMenuClickHandler);
+            $next.mousemove(bqMenuHover);
+            
+            $firstMenuSelected.click(backToFirst);
+            
+        });
+    } else if ($secondMenuSelected == null){
+        
+        $secondMenuSelected = $menu;
+        secondMenuSectionIndex = sectionNumber;
+        
+        
+//        $secondMenuSelected.unbind('mousemove');
+//        $secondMenuSelected.unbind('click');
+        
+        var next = $($secondMenuSelected.find(".slices img").get(secondMenuSectionIndex)).attr('data-next');
+        
+        var $attributedImg = $($secondMenuSelected.find(".slices img").get(secondMenuSectionIndex));
+        $next = $("."+$attributedImg.attr('data-next'));
+        
+        slug = $attributedImg.attr('data-slug');
+        if (slug == undefined){
+            slug = $attributedImg.attr('data-next');
+        }
+        
+        
+        
+        $secondMenuSelected.animate({'width':120, 'height':120, 'left': secondLevelMenuPosition.x, 'top':secondLevelMenuPosition.y}, 1500, function(){
+            $.get(next, {}, function(data){
+                $(".bq-content .answer").html(data);
+                $(".bq-content").fadeIn(500);
+                
+                $secondMenuSelected.click(backToSecond);
+                
+                
+            });
+        });
+    }
+    
+    if (window.location.hash.indexOf(slug) == -1) window.location.hash = window.location.hash + "/" + slug;
+    
+    
+    
+    
+    
+    
+    
+}
+
