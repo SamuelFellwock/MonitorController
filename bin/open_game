@@ -1,0 +1,19 @@
+#!/bin/bash
+
+xdotool mousemove 700 500
+xdotool click 1
+sleep 0.25
+xdotool click 1
+sleep 0.25
+xdotool mousemove 400 250
+sleep 0.25
+xdotool click 1
+sleep 0.8
+xdotool mousemove 700 500
+sleep 0.25
+xdotool click 1
+sleep 5.5
+xdotool mousemove 700 680
+xdotool click 1
+sleep 0.25
+xdotool mousemove 400 530
